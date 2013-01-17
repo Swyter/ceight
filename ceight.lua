@@ -3,23 +3,30 @@
 
 -- created by swyter; released under MIT-like terms.
 
-ffi=require'ffi'
-mem=ffi.new('uint8_t[?]', 0xFFF)
-stk=ffi.new('uint8_t[?]', 0xFFF)
+  ffi=require'ffi'
+  mem=ffi.new('unsigned char[?]', 0xfff)
 
-  local f = assert(io.open("R:\\Repositories\\ceight\\roms\\PONG", "rb"))
-  while true do
-    local bytes = f:read()
-    if not bytes then break end
-    mem=bytes
-  end
+  print("Starting off...")
   
-  a=0
-  while 1 do
-    for i=1,32 do
-    io.write(string.rep((i%2==a and "Û " or " Û"),60/2).."\n")
+  local f = assert(io.open("R:\\Repositories\\ceight\\roms\\PONG", "rb"))
+  if f then
+    while true do
+      local byte=f:read(1)
+      c=(c or 0)+1
+      if not byte or ((0x200-1)+c)>0xfff then break end
+      print(string.format("%02X ",string.byte(byte)),c)
+      mem[(0x200-1)+c]=string.byte(byte)
     end
-    
-    print(">>"..string.byte(io.read(1)))
-    a=not a
+    print("ROM loaded...")
   end
+
+  
+    local t=0
+    while true do
+      if (0x200+t)>(0x200+c) then break end
+      for b=0,9 do
+        io.write(string.format("%02X ", mem[0x200+t+b]))
+      end
+      io.write("\n")
+      t=t+10
+    end
