@@ -31,19 +31,26 @@
   end
   
   
-  
-  function toBits(num)
-    -- returns a table of bits, least significant first.
-    local t={} -- will contain the bits
+function reverse(t)
+  local nt = {} -- new table
+  local size = #t + 1
+  for k,v in ipairs(t) do
+    nt[size - k] = v
+  end
+  return nt
+end
+
+function toBits(num)
+    local t={}
     while num>0 do
-        rest=math.fmod(num,2)
+        rest=num%2
         t[#t+1]=rest
         num=(num-rest)/2
     end
-    return string.rep(0,16-#t)..table.concat(t)
-  end
-  
-  
+    t = reverse(t)
+    return table.concat(t)..("-"):rep(16-#t)
+end
+
   f = assert(io.open("_disasm", "w"))
   --[[
   for x=0,c+1,2 do
@@ -66,6 +73,16 @@
   
   end]]
   
+  test=0x6A02
+  
+  f:write(string.format("%04X", test))
+  
+  f:write((' '):rep(8)..toBits(test))
+  f:write((' '):rep(8)..toBits(bit.band(test,0xF000)))
+  f:write('  ')
+  f:write('\n'..('-'):rep(58)..'\nOPCO  FLAG  BFLAG             BASE  BBASE             FITS\n')
+  
+  
     for op,desc in pairs(opc) do
         f:write(op)
         f:write('  ')
@@ -74,8 +91,24 @@
         f:write('  ')
         
         f:write(toBits(mask))
-        --f:write(string.format("%04X", bit.band(tonumber(op:gsub("[X|Y|N]","6"),16), tonumber(mask,16))))
-        f:write('\n')
+        f:write('  ')
+        --f:write(toBits(bit.band(tonumber("6A02",16),mask)))
+        
+        base=bit.band(tonumber(op:gsub("[X|Y|N]","0"),16), mask)
+        tesm=bit.band(test,                                mask)
+        f:write(string.format("%04X", base))
+        f:write('  ')
+        f:write(toBits(base))
+
+        --proc=bit.band(test,base)
+        f:write('  ')
+        f:write(toBits(tesm))
+        f:write('  ')
+        f:write(string.format("%04X",tesm))
+        
+        ok="  "..((tesm==base) and "OK" or "NO")
+
+        f:write(ok..'\n')
     end
   
   f:close()
