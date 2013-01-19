@@ -18,6 +18,7 @@
 
   print("Starting off...")
   
+  --load rom
   local f = assert(io.open("R:\\Repositories\\ceight\\roms\\PONG", "rb"))
   if f then
     while true do
@@ -61,13 +62,14 @@
       opc[op]['base']=base
       opc[op]['mask']=mask
       
-      --f:write(string.format("%04X",opc[op].base).." "..string.format("%04X",opc[op].mask)..'\n')
   end
   
-  local pc=0x200
+  --init program counter to base address
+  local pc=mem_base
   
+  --run the vm
   while true do
-      if pc>0x200+c then break end
+      if pc>mem_base+c or pc<mem_base then break end --out of bounds!
       
       local ba=vm.mem[pc]
       local bb=vm.mem[pc+1]

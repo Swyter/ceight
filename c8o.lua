@@ -1,4 +1,5 @@
 local opc={
+--['0NNN'] = {me='SYS',  desc="Calls RCA 1802 program at address NNN."},
   ['00E0'] = {me='CLS',  desc="Clears the screen."},
   ['00EE'] = {me='RET',  desc="Returns from a subroutine."},
   ['1NNN'] = {me='JP',   desc="Jumps to address NNN."},
@@ -33,9 +34,7 @@ local opc={
   ['FX33'] = {me='LD',   desc="Stores the Binary-coded decimal representation of VX, with the most significant of three digits at the address in I, the middle digit at I plus 1, and the least significant digit at I plus 2. (In other words, take the decimal representation of VX, place the hundreds digit in memory at location in I, the tens digit at location I+1, and the ones digit at location I+2.)"},
   ['FX55'] = {me='LD',   desc="Stores V0 to VX in memory starting at address I.[4]"},
   ['FX65'] = {me='LD',   desc="Fills V0 to VX with values from memory starting at address I.[4]"},
-  ['0000'] = {me='nop',  desc="Does nothing."},
-  --['0NNN'] = {me='SYS',  desc="Calls RCA 1802 program at address NNN."},
-
+  ['0000'] = {me='nop',  desc="Does nothing."}
 }
 
 return opc
