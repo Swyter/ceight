@@ -31,85 +31,57 @@
   end
   
   
-function reverse(t)
-  local nt = {} -- new table
-  local size = #t + 1
-  for k,v in ipairs(t) do
-    nt[size - k] = v
-  end
-  return nt
-end
-
-function toBits(num)
-    local t={}
-    while num>0 do
-        rest=num%2
-        t[#t+1]=rest
-        num=(num-rest)/2
+  function reverse(t)
+    local nt = {} -- new table
+    local size = #t + 1
+    for k,v in ipairs(t) do
+      nt[size - k] = v
     end
-    t = reverse(t)
-    return table.concat(t)..("-"):rep(16-#t)
-end
+    return nt
+  end
+  function toBits(num)
+      local t={}
+      while num>0 do
+          rest=num%2
+          t[#t+1]=rest
+          num=(num-rest)/2
+      end
+      t = reverse(t)
+      return table.concat(t)..("-"):rep(16-#t)
+  end
 
   f = assert(io.open("_disasm", "w"))
-  --[[
-  for x=0,c+1,2 do
+
+  --preprocess opcodes
+  for op,opn in pairs(opc) do
   
-    f:write(string.format("%02X | ", 0x200+x))
-    
-    hexcomp=bit.lshift(vm.mem[0x200+x],8)+vm.mem[0x200+x+1]
-    f:write(string.format("%04X -> ", hexcomp))
-    f:write(string.format("%s -> ",   toBits(hexcomp)))
-    
-    for op,desc in pairs(opc) do
-      if bit.band(tonumber(op:gsub("[X|Y|N]","0"),16),hexcomp) ~=0 then
-        f:write(op.."  ")
+      mask=tonumber(op:gsub("[^(X|Y|N)]","F"):gsub("[X|Y|N]","0"),16)
+      base=bit.band(tonumber(op:gsub("[X|Y|N]","0"),16), mask)
+
+      opc[op]['base']=base
+      opc[op]['mask']=mask
+      
+      --f:write(string.format("%04X",opc[op].base).." "..string.format("%04X",opc[op].mask)..'\n')
+  end
+  
+  local pc=0x200
+  
+  while true do
+      if pc>0x200+c then break end
+      
+      local ba=vm.mem[pc]
+      local bb=vm.mem[pc+1]
+      
+      local by=bit.lshift(ba,8)+bb
+      
+      for op,opn in pairs(opc) do
+        if bit.band(by,opn.mask)==opn.base then
+          f:write(string.format("%4X| (%04X=(%04X)) %04X %s  %s", pc,bit.band(by,opn.mask),opn.base,  by, op, opn.me)..'\n')
+          break end
       end
-    end
-    
-    
-    
-    f:write('\n')
-  
-  end]]
-  
-  test=0x6A02
-  
-  f:write(string.format("%04X", test))
-  
-  f:write((' '):rep(8)..toBits(test))
-  f:write((' '):rep(8)..toBits(bit.band(test,0xF000)))
-  f:write('  ')
-  f:write('\n'..('-'):rep(58)..'\nOPCO  FLAG  BFLAG             BASE  BBASE             FITS\n')
-  
-  
-    for op,desc in pairs(opc) do
-        f:write(op)
-        f:write('  ')
-        mask=tonumber(op:gsub("[^(X|Y|N)]","F"):gsub("[X|Y|N]","0"),16)
-        f:write(string.format("%04X", mask))
-        f:write('  ')
-        
-        f:write(toBits(mask))
-        f:write('  ')
-        --f:write(toBits(bit.band(tonumber("6A02",16),mask)))
-        
-        base=bit.band(tonumber(op:gsub("[X|Y|N]","0"),16), mask)
-        tesm=bit.band(test,                                mask)
-        f:write(string.format("%04X", base))
-        f:write('  ')
-        f:write(toBits(base))
 
-        --proc=bit.band(test,base)
-        f:write('  ')
-        f:write(toBits(tesm))
-        f:write('  ')
-        f:write(string.format("%04X",tesm))
-        
-        ok="  "..((tesm==base) and "OK" or "NO")
-
-        f:write(ok..'\n')
-    end
+      pc = pc + 2
+  end
   
   f:close()
   
