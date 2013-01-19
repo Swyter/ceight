@@ -50,7 +50,14 @@
       t = reverse(t)
       return table.concat(t)..("-"):rep(16-#t)
   end
-
+  function unpack(base,start,len)
+    local  num=bit.band(base, tonumber(('0'):rep(start)..
+                                       ('F'):rep(len)..
+                                       ('0'):rep((4)-(start+len)), 16)
+                                       )
+    return string.format("%X", bit.rshift(num, ((4)-(start+len))*4))
+  end
+  
   f = assert(io.open("_disasm", "w"))
 
   --preprocess opcodes
@@ -62,11 +69,11 @@
       opc[op]['base']=base
       opc[op]['mask']=mask
       opc[op]['exec']=function(op, by)
-          if op:find("^.X..$")       then f:write(" X")   end
-          if op:find("^..Y.$")       then f:write(" Y")   end
-          if op:find("^.NNN$")       then f:write(" NNN") end
-          if op:find("^.[^N]NN$")    then f:write(" NN")  end
-          if op:find("^.[^N][^N]N$") then f:write(" N")   end
+          if op:find("^.X..$")       then f:write(", "..unpack(by,1,1)) end
+          if op:find("^..Y.$")       then f:write(", "..unpack(by,2,1)) end
+          if op:find("^.NNN$")       then f:write(", "..unpack(by,1,3)) end
+          if op:find("^.[^N]NN$")    then f:write(", "..unpack(by,2,2)) end
+          if op:find("^.[^N][^N]N$") then f:write(", "..unpack(by,3,1)) end
       end
       
   end
@@ -86,7 +93,7 @@
       for op,opn in pairs(opc) do
         if bit.band(by,opn.mask)==opn.base then
 
-          f:write(string.format("%4X| (%04X=(%04X)) %04X %s  %s", pc,bit.band(by,opn.mask),opn.base,  by, op, opn.me))
+          f:write(string.format("%4X| (%04X=(%04X)) %04X %s  %5s", pc,bit.band(by,opn.mask),opn.base,  by, op, opn.me))
           opn.exec(op,by)
           f:write('\n')
           break end
