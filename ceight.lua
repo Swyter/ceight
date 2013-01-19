@@ -62,11 +62,11 @@
       opc[op]['base']=base
       opc[op]['mask']=mask
       opc[op]['exec']=function(op, by)
-          if op:find("X")          then f:write(" X")   end
-          if op:find("Y")          then f:write(" Y")   end
-          if op:find(".NNN")       then f:write(" NNN") end
-          if op:find(".[^N]NN")    then f:write(" NN")  end
-          if op:find(".[^N][^N]N") then f:write(" N")   end
+          if op:find("^.X..$")       then f:write(" X")   end
+          if op:find("^..Y.$")       then f:write(" Y")   end
+          if op:find("^.NNN$")       then f:write(" NNN") end
+          if op:find("^.[^N]NN$")    then f:write(" NN")  end
+          if op:find("^.[^N][^N]N$") then f:write(" N")   end
       end
       
   end
