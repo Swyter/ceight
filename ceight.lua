@@ -53,8 +53,8 @@
   function unpack(base,start,len)
     local  num=bit.band(base, tonumber(('0'):rep(start)..
                                        ('F'):rep(len)..
-                                       ('0'):rep((4)-(start+len)), 16)
-                                       )
+                                       ('0'):rep((4)-(start+len)), 16))
+                                       
     return string.format("%X", bit.rshift(num, ((4)-(start+len))*4))
   end
   
@@ -69,11 +69,11 @@
       opc[op]['base']=base
       opc[op]['mask']=mask
       opc[op]['exec']=function(op, by)
-          if op:find("^.X..$")       then f:write(", "..unpack(by,1,1)) end
-          if op:find("^..Y.$")       then f:write(", "..unpack(by,2,1)) end
-          if op:find("^.NNN$")       then f:write(", "..unpack(by,1,3)) end
-          if op:find("^.[^N]NN$")    then f:write(", "..unpack(by,2,2)) end
-          if op:find("^.[^N][^N]N$") then f:write(", "..unpack(by,3,1)) end
+          if op:find("^.X..$")       then f:write(", x·"..unpack(by,1,1)) end
+          if op:find("^..Y.$")       then f:write(", y·"..unpack(by,2,1)) end
+          if op:find("^.NNN$")       then f:write(", n·"..unpack(by,1,3)) end
+          if op:find("^.[^N]NN$")    then f:write(", n·"..unpack(by,2,2)) end
+          if op:find("^.[^N][^N]N$") then f:write(", n·"..unpack(by,3,1)) end
       end
       
   end
