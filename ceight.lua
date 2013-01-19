@@ -19,7 +19,7 @@
   print("Starting off...")
   
   --load rom
-  local f = assert(io.open("R:\\Repositories\\ceight\\roms\\PONG", "rb"))
+  local f = assert(io.open("roms\\PONG", "rb"))
   if f then
     while true do
       local byte=f:read(1)
@@ -61,6 +61,13 @@
 
       opc[op]['base']=base
       opc[op]['mask']=mask
+      opc[op]['exec']=function(op, by)
+          if op:find("X")          then f:write(" X")   end
+          if op:find("Y")          then f:write(" Y")   end
+          if op:find(".NNN")       then f:write(" NNN") end
+          if op:find(".[^N]NN")    then f:write(" NN")  end
+          if op:find(".[^N][^N]N") then f:write(" N")   end
+      end
       
   end
   
@@ -78,7 +85,10 @@
       
       for op,opn in pairs(opc) do
         if bit.band(by,opn.mask)==opn.base then
-          f:write(string.format("%4X| (%04X=(%04X)) %04X %s  %s", pc,bit.band(by,opn.mask),opn.base,  by, op, opn.me)..'\n')
+
+          f:write(string.format("%4X| (%04X=(%04X)) %04X %s  %s", pc,bit.band(by,opn.mask),opn.base,  by, op, opn.me))
+          opn.exec(op,by)
+          f:write('\n')
           break end
       end
 
