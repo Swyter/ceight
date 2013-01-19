@@ -68,12 +68,12 @@
 
       opc[op]['base']=base
       opc[op]['mask']=mask
-      opc[op]['exec']=function(op, by)
-          if op:find("^.X..$")       then f:write(", x·"..unpack(by,1,1)) end
-          if op:find("^..Y.$")       then f:write(", y·"..unpack(by,2,1)) end
-          if op:find("^.NNN$")       then f:write(", n·"..unpack(by,1,3)) end
-          if op:find("^.[^N]NN$")    then f:write(", n·"..unpack(by,2,2)) end
-          if op:find("^.[^N][^N]N$") then f:write(", n·"..unpack(by,3,1)) end
+      opc[op]['exec']=function(op, by) arg=''
+          if op:find("^.X..$")       then arg=arg..(", x·"..unpack(by,1,1)) end
+          if op:find("^..Y.$")       then arg=arg..(", y·"..unpack(by,2,1)) end
+          if op:find("^.NNN$")       then arg=arg..(", n·"..unpack(by,1,3)) end
+          if op:find("^.[^N]NN$")    then arg=arg..(", n·"..unpack(by,2,2)) end
+          if op:find("^.[^N][^N]N$") then arg=arg..(", n·"..unpack(by,3,1)) end
       end
       
   end
@@ -92,10 +92,9 @@
       
       for op,opn in pairs(opc) do
         if bit.band(by,opn.mask)==opn.base then
-
-          f:write(string.format("%4X| (%04X=(%04X)) %04X %s  %5s", pc,bit.band(by,opn.mask),opn.base,  by, op, opn.me))
           opn.exec(op,by)
-          f:write('\n')
+          f:write(string.format("%4X| %4X  %5s%s", pc, by, opn.me, arg))
+          f:write((' '):rep(16-(arg:len() or 0))..' ;'..opn.desc..'\n')
           break end
       end
 
