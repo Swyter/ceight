@@ -1,124 +1,343 @@
- 200| 6A02     LD, x·A, n·2       ;Sets VX to NN.
- 202| 6B0C     LD, x·B, n·C       ;Sets VX to NN.
- 204| 6C3F     LD, x·C, n·3F      ;Sets VX to NN.
- 206| 6D0C     LD, x·D, n·C       ;Sets VX to NN.
- 208| A2EA     LD, n·2EA          ;Sets I to the address NNN.
- 20A| DAB6    DRW, x·A, y·B, n·6  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 20C| DCD6    DRW, x·C, y·D, n·6  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 20E| 6E00     LD, x·E, n·0       ;Sets VX to NN.
- 210| 22D4   CALL, n·2D4          ;Calls subroutine at NNN.
- 212| 6603     LD, x·6, n·3       ;Sets VX to NN.
- 214| 6802     LD, x·8, n·2       ;Sets VX to NN.
- 216| 6060     LD, x·0, n·60      ;Sets VX to NN.
- 218| F015     LD, x·0            ;Sets the delay timer to VX.
- 21A| F007     LD, x·0            ;Sets VX to the value of the delay timer.
- 21C| 3000     SE, x·0, n·0       ;Skips the next instruction if VX equals NN.
- 21E| 121A     JP, n·21A          ;Jumps to address NNN.
- 220| C717    RND, x·7, n·17      ;Sets VX to a random number and NN.
- 222| 7708    ADD, x·7, n·8       ;Adds NN to VX.
- 224| 69FF     LD, x·9, n·FF      ;Sets VX to NN.
- 226| A2F0     LD, n·2F0          ;Sets I to the address NNN.
- 228| D671    DRW, x·6, y·7, n·1  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 22A| A2EA     LD, n·2EA          ;Sets I to the address NNN.
- 22C| DAB6    DRW, x·A, y·B, n·6  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 22E| DCD6    DRW, x·C, y·D, n·6  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 230| 6001     LD, x·0, n·1       ;Sets VX to NN.
- 232| E0A1   SKNP, x·0            ;Skips the next instruction if the key stored in VX isn't pressed.
- 234| 7BFE    ADD, x·B, n·FE      ;Adds NN to VX.
- 236| 6004     LD, x·0, n·4       ;Sets VX to NN.
- 238| E0A1   SKNP, x·0            ;Skips the next instruction if the key stored in VX isn't pressed.
- 23A| 7B02    ADD, x·B, n·2       ;Adds NN to VX.
- 23C| 601F     LD, x·0, n·1F      ;Sets VX to NN.
- 23E| 8B02    AND, x·B, y·0       ;Sets VX to VX and VY.
- 240| DAB6    DRW, x·A, y·B, n·6  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 242| 600C     LD, x·0, n·C       ;Sets VX to NN.
- 244| E0A1   SKNP, x·0            ;Skips the next instruction if the key stored in VX isn't pressed.
- 246| 7DFE    ADD, x·D, n·FE      ;Adds NN to VX.
- 248| 600D     LD, x·0, n·D       ;Sets VX to NN.
- 24A| E0A1   SKNP, x·0            ;Skips the next instruction if the key stored in VX isn't pressed.
- 24C| 7D02    ADD, x·D, n·2       ;Adds NN to VX.
- 24E| 601F     LD, x·0, n·1F      ;Sets VX to NN.
- 250| 8D02    AND, x·D, y·0       ;Sets VX to VX and VY.
- 252| DCD6    DRW, x·C, y·D, n·6  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 254| A2F0     LD, n·2F0          ;Sets I to the address NNN.
- 256| D671    DRW, x·6, y·7, n·1  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 258| 8684    ADD, x·6, y·8       ;Adds VY to VX. VF is set to 1 when there's a carry, and to 0 when there isn't.
- 25A| 8794    ADD, x·7, y·9       ;Adds VY to VX. VF is set to 1 when there's a carry, and to 0 when there isn't.
- 25C| 603F     LD, x·0, n·3F      ;Sets VX to NN.
- 25E| 8602    AND, x·6, y·0       ;Sets VX to VX and VY.
- 260| 611F     LD, x·1, n·1F      ;Sets VX to NN.
- 262| 8712    AND, x·7, y·1       ;Sets VX to VX and VY.
- 264| 4602    SNE, x·6, n·2       ;Skips the next instruction if VX doesn't equal NN.
- 266| 1278     JP, n·278          ;Jumps to address NNN.
- 268| 463F    SNE, x·6, n·3F      ;Skips the next instruction if VX doesn't equal NN.
- 26A| 1282     JP, n·282          ;Jumps to address NNN.
- 26C| 471F    SNE, x·7, n·1F      ;Skips the next instruction if VX doesn't equal NN.
- 26E| 69FF     LD, x·9, n·FF      ;Sets VX to NN.
- 270| 4700    SNE, x·7, n·0       ;Skips the next instruction if VX doesn't equal NN.
- 272| 6901     LD, x·9, n·1       ;Sets VX to NN.
- 274| D671    DRW, x·6, y·7, n·1  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 276| 122A     JP, n·22A          ;Jumps to address NNN.
- 278| 6802     LD, x·8, n·2       ;Sets VX to NN.
- 27A| 6301     LD, x·3, n·1       ;Sets VX to NN.
- 27C| 8070     LD, x·0, y·7       ;Sets VX to the value of VY.
- 27E| 80B5    SUB, x·0, y·B       ;VY is subtracted from VX. VF is set to 0 when there's a borrow, and 1 when there isn't.
- 280| 128A     JP, n·28A          ;Jumps to address NNN.
- 282| 68FE     LD, x·8, n·FE      ;Sets VX to NN.
- 284| 630A     LD, x·3, n·A       ;Sets VX to NN.
- 286| 8070     LD, x·0, y·7       ;Sets VX to the value of VY.
- 288| 80D5    SUB, x·0, y·D       ;VY is subtracted from VX. VF is set to 0 when there's a borrow, and 1 when there isn't.
- 28A| 3F01     SE, x·F, n·1       ;Skips the next instruction if VX equals NN.
- 28C| 12A2     JP, n·2A2          ;Jumps to address NNN.
- 28E| 6102     LD, x·1, n·2       ;Sets VX to NN.
- 290| 8015    SUB, x·0, y·1       ;VY is subtracted from VX. VF is set to 0 when there's a borrow, and 1 when there isn't.
- 292| 3F01     SE, x·F, n·1       ;Skips the next instruction if VX equals NN.
- 294| 12BA     JP, n·2BA          ;Jumps to address NNN.
- 296| 8015    SUB, x·0, y·1       ;VY is subtracted from VX. VF is set to 0 when there's a borrow, and 1 when there isn't.
- 298| 3F01     SE, x·F, n·1       ;Skips the next instruction if VX equals NN.
- 29A| 12C8     JP, n·2C8          ;Jumps to address NNN.
- 29C| 8015    SUB, x·0, y·1       ;VY is subtracted from VX. VF is set to 0 when there's a borrow, and 1 when there isn't.
- 29E| 3F01     SE, x·F, n·1       ;Skips the next instruction if VX equals NN.
- 2A0| 12C2     JP, n·2C2          ;Jumps to address NNN.
- 2A2| 6020     LD, x·0, n·20      ;Sets VX to NN.
- 2A4| F018     LD, x·0            ;Sets the sound timer to VX.
- 2A6| 22D4   CALL, n·2D4          ;Calls subroutine at NNN.
- 2A8| 8E34    ADD, x·E, y·3       ;Adds VY to VX. VF is set to 1 when there's a carry, and to 0 when there isn't.
- 2AA| 22D4   CALL, n·2D4          ;Calls subroutine at NNN.
- 2AC| 663E     LD, x·6, n·3E      ;Sets VX to NN.
- 2AE| 3301     SE, x·3, n·1       ;Skips the next instruction if VX equals NN.
- 2B0| 6603     LD, x·6, n·3       ;Sets VX to NN.
- 2B2| 68FE     LD, x·8, n·FE      ;Sets VX to NN.
- 2B4| 3301     SE, x·3, n·1       ;Skips the next instruction if VX equals NN.
- 2B6| 6802     LD, x·8, n·2       ;Sets VX to NN.
- 2B8| 1216     JP, n·216          ;Jumps to address NNN.
- 2BA| 79FF    ADD, x·9, n·FF      ;Adds NN to VX.
- 2BC| 49FE    SNE, x·9, n·FE      ;Skips the next instruction if VX doesn't equal NN.
- 2BE| 69FF     LD, x·9, n·FF      ;Sets VX to NN.
- 2C0| 12C8     JP, n·2C8          ;Jumps to address NNN.
- 2C2| 7901    ADD, x·9, n·1       ;Adds NN to VX.
- 2C4| 4902    SNE, x·9, n·2       ;Skips the next instruction if VX doesn't equal NN.
- 2C6| 6901     LD, x·9, n·1       ;Sets VX to NN.
- 2C8| 6004     LD, x·0, n·4       ;Sets VX to NN.
- 2CA| F018     LD, x·0            ;Sets the sound timer to VX.
- 2CC| 7601    ADD, x·6, n·1       ;Adds NN to VX.
- 2CE| 4640    SNE, x·6, n·40      ;Skips the next instruction if VX doesn't equal NN.
- 2D0| 76FE    ADD, x·6, n·FE      ;Adds NN to VX.
- 2D2| 126C     JP, n·26C          ;Jumps to address NNN.
- 2D4| A2F2     LD, n·2F2          ;Sets I to the address NNN.
- 2D6| FE33     LD, x·E            ;Stores the Binary-coded decimal representation of VX, with the most significant of three digits at the address in I, the middle digit at I plus 1, and the least significant digit at I plus 2. (In other words, take the decimal representation of VX, place the hundreds digit in memory at location in I, the tens digit at location I+1, and the ones digit at location I+2.)
- 2D8| F265     LD, x·2            ;Fills V0 to VX with values from memory starting at address I.[4]
- 2DA| F129     LD, x·1            ;Sets I to the location of the sprite for the character in VX. Characters 0-F (in hexadecimal) are represented by a 4x5 font.
- 2DC| 6414     LD, x·4, n·14      ;Sets VX to NN.
- 2DE| 6500     LD, x·5, n·0       ;Sets VX to NN.
- 2E0| D455    DRW, x·4, y·5, n·5  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 2E2| 7415    ADD, x·4, n·15      ;Adds NN to VX.
- 2E4| F229     LD, x·2            ;Sets I to the location of the sprite for the character in VX. Characters 0-F (in hexadecimal) are represented by a 4x5 font.
- 2E6| D455    DRW, x·4, y·5, n·5  ;Draws a sprite at coordinate (VX, VY) that has a width of 8 pixels and a height of N pixels. Each row of 8 pixels is read as bit-coded (with the most significant bit of each byte displayed on the left) starting from memory location I; I value doesn't change after the execution of this instruction. As described above, VF is set to 1 if any screen pixels are flipped from set to unset when the sprite is drawn, and to 0 if that doesn't happen.
- 2E8|   EE    RET                 ;Returns from a subroutine.
- 2EA| 8080     LD, x·0, y·8       ;Sets VX to the value of VY.
- 2EC| 8080     LD, x·0, y·8       ;Sets VX to the value of VY.
- 2EE| 8080     LD, x·0, y·8       ;Sets VX to the value of VY.
- 2F0| 8000     LD, x·0, y·0       ;Sets VX to the value of VY.
- 2F2|    0    nop                 ;Does nothing.
- 2F4|    0    nop                 ;Does nothing.
- 2F6|    0    nop                 ;Does nothing.
+ 200| 6A02     LD
+[x] = 10
+[n] = 2
+ 202| 6B0C     LD
+[x] = 11
+[n] = 12
+ 204| 6C3F     LD
+[x] = 12
+[n] = 63
+ 206| 6D0C     LD
+[x] = 13
+[n] = 12
+ 208| A2EA     LD
+[n] = 746
+ 20A| DAB6    DRW
+[y] = 11
+[x] = 10
+[n] = 6
+ 20C| DCD6    DRW
+[y] = 13
+[x] = 12
+[n] = 6
+ 20E| 6E00     LD
+[x] = 14
+[n] = 0
+ 210| 22D4   CALL
+[n] = 724
+ 212| 6603     LD
+[x] = 6
+[n] = 3
+ 214| 6802     LD
+[x] = 8
+[n] = 2
+ 216| 6060     LD
+[x] = 0
+[n] = 96
+ 218| F015     LD
+[x] = 0
+ 21A| F007     LD
+[x] = 0
+ 21C| 3000     SE
+[x] = 0
+[n] = 0
+ 21E| 121A     JP
+[n] = 538
+ 220| C717    RND
+[x] = 7
+[n] = 23
+ 222| 7708    ADD
+[x] = 7
+[n] = 8
+ 224| 69FF     LD
+[x] = 9
+[n] = 255
+ 226| A2F0     LD
+[n] = 752
+ 228| D671    DRW
+[y] = 7
+[x] = 6
+[n] = 1
+ 22A| A2EA     LD
+[n] = 746
+ 22C| DAB6    DRW
+[y] = 11
+[x] = 10
+[n] = 6
+ 22E| DCD6    DRW
+[y] = 13
+[x] = 12
+[n] = 6
+ 230| 6001     LD
+[x] = 0
+[n] = 1
+ 232| E0A1   SKNP
+[x] = 0
+ 234| 7BFE    ADD
+[x] = 11
+[n] = 254
+ 236| 6004     LD
+[x] = 0
+[n] = 4
+ 238| E0A1   SKNP
+[x] = 0
+ 23A| 7B02    ADD
+[x] = 11
+[n] = 2
+ 23C| 601F     LD
+[x] = 0
+[n] = 31
+ 23E| 8B02    AND
+[y] = 0
+[x] = 11
+ 240| DAB6    DRW
+[y] = 11
+[x] = 10
+[n] = 6
+ 242| 600C     LD
+[x] = 0
+[n] = 12
+ 244| E0A1   SKNP
+[x] = 0
+ 246| 7DFE    ADD
+[x] = 13
+[n] = 254
+ 248| 600D     LD
+[x] = 0
+[n] = 13
+ 24A| E0A1   SKNP
+[x] = 0
+ 24C| 7D02    ADD
+[x] = 13
+[n] = 2
+ 24E| 601F     LD
+[x] = 0
+[n] = 31
+ 250| 8D02    AND
+[y] = 0
+[x] = 13
+ 252| DCD6    DRW
+[y] = 13
+[x] = 12
+[n] = 6
+ 254| A2F0     LD
+[n] = 752
+ 256| D671    DRW
+[y] = 7
+[x] = 6
+[n] = 1
+ 258| 8684    ADD
+[y] = 8
+[x] = 6
+ 25A| 8794    ADD
+[y] = 9
+[x] = 7
+ 25C| 603F     LD
+[x] = 0
+[n] = 63
+ 25E| 8602    AND
+[y] = 0
+[x] = 6
+ 260| 611F     LD
+[x] = 1
+[n] = 31
+ 262| 8712    AND
+[y] = 1
+[x] = 7
+ 264| 4602    SNE
+[x] = 6
+[n] = 2
+ 266| 1278     JP
+[n] = 632
+ 268| 463F    SNE
+[x] = 6
+[n] = 63
+ 26A| 1282     JP
+[n] = 642
+ 26C| 471F    SNE
+[x] = 7
+[n] = 31
+ 26E| 69FF     LD
+[x] = 9
+[n] = 255
+ 270| 4700    SNE
+[x] = 7
+[n] = 0
+ 272| 6901     LD
+[x] = 9
+[n] = 1
+ 274| D671    DRW
+[y] = 7
+[x] = 6
+[n] = 1
+ 276| 122A     JP
+[n] = 554
+ 278| 6802     LD
+[x] = 8
+[n] = 2
+ 27A| 6301     LD
+[x] = 3
+[n] = 1
+ 27C| 8070     LD
+[y] = 7
+[x] = 0
+ 27E| 80B5    SUB
+[y] = 11
+[x] = 0
+ 280| 128A     JP
+[n] = 650
+ 282| 68FE     LD
+[x] = 8
+[n] = 254
+ 284| 630A     LD
+[x] = 3
+[n] = 10
+ 286| 8070     LD
+[y] = 7
+[x] = 0
+ 288| 80D5    SUB
+[y] = 13
+[x] = 0
+ 28A| 3F01     SE
+[x] = 15
+[n] = 1
+ 28C| 12A2     JP
+[n] = 674
+ 28E| 6102     LD
+[x] = 1
+[n] = 2
+ 290| 8015    SUB
+[y] = 1
+[x] = 0
+ 292| 3F01     SE
+[x] = 15
+[n] = 1
+ 294| 12BA     JP
+[n] = 698
+ 296| 8015    SUB
+[y] = 1
+[x] = 0
+ 298| 3F01     SE
+[x] = 15
+[n] = 1
+ 29A| 12C8     JP
+[n] = 712
+ 29C| 8015    SUB
+[y] = 1
+[x] = 0
+ 29E| 3F01     SE
+[x] = 15
+[n] = 1
+ 2A0| 12C2     JP
+[n] = 706
+ 2A2| 6020     LD
+[x] = 0
+[n] = 32
+ 2A4| F018     LD
+[x] = 0
+ 2A6| 22D4   CALL
+[n] = 724
+ 2A8| 8E34    ADD
+[y] = 3
+[x] = 14
+ 2AA| 22D4   CALL
+[n] = 724
+ 2AC| 663E     LD
+[x] = 6
+[n] = 62
+ 2AE| 3301     SE
+[x] = 3
+[n] = 1
+ 2B0| 6603     LD
+[x] = 6
+[n] = 3
+ 2B2| 68FE     LD
+[x] = 8
+[n] = 254
+ 2B4| 3301     SE
+[x] = 3
+[n] = 1
+ 2B6| 6802     LD
+[x] = 8
+[n] = 2
+ 2B8| 1216     JP
+[n] = 534
+ 2BA| 79FF    ADD
+[x] = 9
+[n] = 255
+ 2BC| 49FE    SNE
+[x] = 9
+[n] = 254
+ 2BE| 69FF     LD
+[x] = 9
+[n] = 255
+ 2C0| 12C8     JP
+[n] = 712
+ 2C2| 7901    ADD
+[x] = 9
+[n] = 1
+ 2C4| 4902    SNE
+[x] = 9
+[n] = 2
+ 2C6| 6901     LD
+[x] = 9
+[n] = 1
+ 2C8| 6004     LD
+[x] = 0
+[n] = 4
+ 2CA| F018     LD
+[x] = 0
+ 2CC| 7601    ADD
+[x] = 6
+[n] = 1
+ 2CE| 4640    SNE
+[x] = 6
+[n] = 64
+ 2D0| 76FE    ADD
+[x] = 6
+[n] = 254
+ 2D2| 126C     JP
+[n] = 620
+ 2D4| A2F2     LD
+[n] = 754
+ 2D6| FE33     LD
+[x] = 14
+ 2D8| F265     LD
+[x] = 2
+ 2DA| F129     LD
+[x] = 1
+ 2DC| 6414     LD
+[x] = 4
+[n] = 20
+ 2DE| 6500     LD
+[x] = 5
+[n] = 0
+ 2E0| D455    DRW
+[y] = 5
+[x] = 4
+[n] = 5
+ 2E2| 7415    ADD
+[x] = 4
+[n] = 21
+ 2E4| F229     LD
+[x] = 2
+ 2E6| D455    DRW
+[y] = 5
+[x] = 4
+[n] = 5
+ 2E8|   EE    RET
+ 2EA| 8080     LD
+[y] = 8
+[x] = 0
+ 2EC| 8080     LD
+[y] = 8
+[x] = 0
+ 2EE| 8080     LD
+[y] = 8
+[x] = 0
+ 2F0| 8000     LD
+[y] = 0
+[x] = 0
+ 2F2|    0    nop
+ 2F4|    0    nop
+ 2F6|    0    nop
