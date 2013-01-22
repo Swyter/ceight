@@ -125,6 +125,9 @@
   opc['FX29'].exec=function(...) arg=(...) f:write((" setting I pointing to the glyph in V%X(%x)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)]))
                                            vm.i=(vm["v"..("%x"):format(arg.x)])*5
                                  end
+  opc['FX18'].exec=function(...) arg=(...) f:write((" setting sound timer to V%X(%x)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)]))
+                                           vm.v_st=vm["v"..("%x"):format(arg.x)]
+                                 end
 
   --preprocess opcodes
   for op,opn in pairs(opc) do
