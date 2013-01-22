@@ -109,13 +109,21 @@
                                  end
   opc['FX33'].exec=function(...) arg=(...) local binenc=string.format("%03d",tostring(vm["v"..("%x"):format(arg.x)]))
                                            f:write((" saving V%X(%s) at I(0x%X) encoding it as bin\n"):format(arg.x,binenc,vm.i))
-                                           vm.mem[vm.i+0]=string.byte(binenc:sub(1,1))
-                                           vm.mem[vm.i+1]=string.byte(binenc:sub(2,2))
-                                           vm.mem[vm.i+2]=string.byte(binenc:sub(3,3))
+                                           vm.mem[vm.i+0]=tonumber(binenc:sub(1,1))
+                                           vm.mem[vm.i+1]=tonumber(binenc:sub(2,2))
+                                           vm.mem[vm.i+2]=tonumber(binenc:sub(3,3))
                                  end
   opc['CXNN'].exec=function(...) arg=(...) local rnd=math.random(0,0xfff)
                                            f:write((" saving random value (%s) at V%X with mask %X\n"):format(rnd,arg.x,arg.n))
                                            vm["v"..("%x"):format(arg.x)]=bit.band(rnd,arg.n)
+                                 end
+  opc['FX65'].exec=function(...) arg=(...) f:write((" filling V0 to V%X from mem starting at 0x%X\n"):format(arg.x,vm.i))
+                                           for i=0,arg.x do
+                                            vm["v"..("%x"):format(i)]=vm.mem[vm.i+i]
+                                           end
+                                 end
+  opc['FX29'].exec=function(...) arg=(...) f:write((" setting I pointing to the glyph in V%X(%x)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)]))
+                                           vm.i=(vm["v"..("%x"):format(arg.x)])*5
                                  end
 
   --preprocess opcodes
