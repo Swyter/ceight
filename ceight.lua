@@ -84,7 +84,7 @@
     for key,value in pairs(t) do
       f:write(indent,'[',tostring(key),']') 
       if type(value)=="table" then f:write(':\n') print_r(value,indent..'\t')
-      else f:write(' = ',tostring(value),'\n') end
+      else f:write(' = ',string.format("%X", tostring(value)),'\n') end
     end
   end
   
@@ -106,7 +106,7 @@
       opc[op]['base']=base
       opc[op]['mask']=mask
       opc[op]['args']=args
-      opc[op]['exec']=function(...) print_r(...) end
+      opc[op]['exec']=function(...) print_r(...,(" "):rep(17)) end
       
   end
   
@@ -128,7 +128,7 @@
           local arg={}
           for nm,ay in pairs(opn.args) do arg[nm]=unpack(by,ay.mask,ay.shift) end
           
-          f:write(string.format("%4X| %4X  %5s\n", pc, by, opn.me ))
+          f:write(string.format("%4X| %4X  %5s\n", pc, by, opn.mne ))
           opn.exec(arg)
           
           break end
