@@ -128,6 +128,19 @@
   opc['FX18'].exec=function(...) arg=(...) f:write((" setting sound timer to V%X(%x)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)]))
                                            vm.v_st=vm["v"..("%x"):format(arg.x)]
                                  end
+  opc['8XY2'].exec=function(...) arg=(...) local band=bit.band(vm["v"..("%x"):format(arg.x)],
+                                                               vm["v"..("%x"):format(arg.y)])
+                                           f:write((" setting V%X to V%X(%x) and V%X(%x)=%x\n"):format(arg.x, arg.x, vm["v"..("%x"):format(arg.x)], arg.y, vm["v"..("%x"):format(arg.y)], band))
+                                           vm["v"..("%x"):format(arg.x)]=band
+                                 end
+  opc['7XNN'].exec=function(...) arg=(...) local sum=vm["v"..("%x"):format(arg.x)]+arg.n
+                                           f:write((" setting V%X to V%X(%x)+(%x)=%x\n"):format(arg.x, arg.x, vm["v"..("%x"):format(arg.x)], arg.n, sum))
+                                           vm["v"..("%x"):format(arg.x)]=sum
+                                 end
+  opc['8XY4'].exec=function(...) arg=(...) local sum=vm["v"..("%x"):format(arg.x)]+vm["v"..("%x"):format(arg.y)]
+                                           f:write((" setting V%X to V%X(%x)+V%X(%x)=%x\n"):format(arg.x, arg.x, vm["v"..("%x"):format(arg.x)], arg.y, vm["v"..("%x"):format(arg.y)], sum))
+                                           vm["v"..("%x"):format(arg.x)]=sum
+                                 end
 
   --preprocess opcodes
   for op,opn in pairs(opc) do
