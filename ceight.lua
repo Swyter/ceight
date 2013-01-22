@@ -9,11 +9,15 @@
     struct{
       unsigned char vid[64*32];                                     // display resolution is 64з32 pixels, and color is monochrome
       unsigned char mem[0xfff];                                     // from 200h to FFFh, making for 3,584 bytes
+      unsigned int stk[16];                                         // stack for returning back from routines
       unsigned int v0,v1,v2,v3,v4,v5,v6,v7,v8,v9,va,vb,vc,vd,ve,vf; // 16 8-bit data registers named from V0 to VF
+      unsigned int v_dt,v_st;                                       // delay and sound timer
       unsigned int i;                                               // the address register, which is named I, is 16 bits wide
+      unsigned int pc;                                              // the program counter
     }
   ]])
-
+  
+  local max_stak=0
   local mem_base=0x200
   
   --predefined array of sprites (glyphs)
@@ -49,25 +53,7 @@
     f:close()
   end
   
-  
-  function reverse(t)
-    local nt = {} -- new table
-    local size = #t + 1
-    for k,v in ipairs(t) do
-      nt[size - k] = v
-    end
-    return nt
-  end
-  function toBits(num)
-      local t={}
-      while num>0 do
-          rest=num%2
-          t[#t+1]=rest
-          num=(num-rest)/2
-      end
-      t = reverse(t)
-      return table.concat(t)..("-"):rep(16-#t)
-  end
+
   function buildargs(base,start,len)
     local  num=tonumber(('0'):rep(start)..
                         ('F'):rep(len)..
@@ -82,13 +68,51 @@
   function print_r (t, indent) -- alt version, abuse to http://richard.warburton.it
     local indent=indent or ''
     for key,value in pairs(t) do
-      f:write(indent,'[',tostring(key),']') 
+      f:write(indent,('    '):rep(max_stak)..'[',tostring(key),']') 
       if type(value)=="table" then f:write(':\n') print_r(value,indent..'\t')
       else f:write(' = ',string.format("%X", tostring(value)),'\n') end
     end
   end
   
   f = assert(io.open("_disasm", "w"))
+
+  
+  opc['1NNN'].exec=function(...) arg=(...) f:write((" jumping to %x\n"):format(arg.n))
+                                 vm.pc=arg.n-2 end
+  opc['6XNN'].exec=function(...) arg=(...) f:write((" setting V%X to %x\n"):format(arg.x,arg.n))
+                                 vm["v"..("%x"):format(arg.x)]=arg.n end
+  opc['ANNN'].exec=function(...) arg=(...) f:write((" setting I to %x\n"):format(arg.n))
+                                 vm.i=arg.n end
+  opc['DXYN'].exec=function(...) arg=(...) f:write((" drawn %d line sprite at (%d,%d) using I: 0x%x\n"):format(arg.n,arg.x,arg.y,vm.i)) end
+  
+  opc['2NNN'].exec=function(...) arg=(...) f:write((" called routine at 0x%x\n"):format(arg.n))
+                                 vm.stk[max_stak]=vm.pc
+                                 vm.pc=arg.n-2
+                                 max_stak=max_stak+1
+                                 end
+  opc['00EE'].exec=function(...) arg=(...) vm.pc=vm.stk[max_stak-1]
+                                           f:write((" returns back to 0x%x (%d lvls of nesting)\n"):format(vm.pc,max_stak))
+                                           max_stak=max_stak-1
+                                 end
+  opc['3XNN'].exec=function(...) arg=(...) if vm["v"..("%x"):format(arg.x)]==arg.n then
+                                            f:write((" skipping the next instruction (V%X==%X)\n"):format(arg.x,arg.n))
+                                            vm.pc=vm.pc+2
+                                           else
+                                            f:write((" don't skip anything (V%X(%X)!=%X)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)],arg.n))
+                                           end
+                                 end
+  opc['FX07'].exec=function(...) arg=(...) f:write((" setting V%X to timer(%X)\n"):format(arg.x,vm.v_dt))
+                                           vm["v"..("%x"):format(arg.x)]=vm.v_dt
+                                 end
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+
 
   --preprocess opcodes
   for op,opn in pairs(opc) do
@@ -106,19 +130,19 @@
       opc[op]['base']=base
       opc[op]['mask']=mask
       opc[op]['args']=args
-      opc[op]['exec']=function(...) print_r(...,(" "):rep(17)) end
+      opc[op]['exec']=opc[op]['exec'] or function(...) f:write(" stub!\n") print_r(...,(" "):rep(17)) end
       
   end
   
   --init program counter to base address
-  local pc=mem_base
+  vm.pc=mem_base
   
   --run the vm
   while true do
-      if pc>mem_base+c or pc<mem_base then break end --out of bounds!
+      if vm.pc>mem_base+c or vm.pc<mem_base then break end --out of bounds!
       
-      local ba=vm.mem[pc]
-      local bb=vm.mem[pc+1]
+      local ba=vm.mem[vm.pc]
+      local bb=vm.mem[vm.pc+1]
       
       local by=bit.lshift(ba,8)+bb
       
@@ -128,20 +152,13 @@
           local arg={}
           for nm,ay in pairs(opn.args) do arg[nm]=unpack(by,ay.mask,ay.shift) end
           
-          f:write(string.format("%4X| %4X  %5s\n", pc, by, opn.mne ))
+          f:write(string.format("%4X| %4X  %s%5s", vm.pc, by, ('   |'):rep(max_stak), opn.mne ))
           opn.exec(arg)
           
           break end
       end
 
-      pc = pc + 2
+      vm.pc = vm.pc + 2
   end
   
   f:close()
-  
-  --for _=0,32/2 do
-  --  for _=0,64/2 do
-  --     io.write("мп")
-  --  end
-  --  io.write("\n")
-  --end
