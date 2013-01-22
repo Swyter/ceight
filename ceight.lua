@@ -107,6 +107,16 @@
   opc['FX07'].exec=function(...) arg=(...) f:write((" setting V%X to timer(%X)\n"):format(arg.x,vm.v_dt))
                                            vm["v"..("%x"):format(arg.x)]=vm.v_dt
                                  end
+  opc['FX33'].exec=function(...) arg=(...) local binenc=string.format("%03d",tostring(vm["v"..("%x"):format(arg.x)]))
+                                           f:write((" saving V%X(%s) at I(0x%X) encoding it as bin\n"):format(arg.x,binenc,vm.i))
+                                           vm.mem[vm.i+0]=string.byte(binenc:sub(1,1))
+                                           vm.mem[vm.i+1]=string.byte(binenc:sub(2,2))
+                                           vm.mem[vm.i+2]=string.byte(binenc:sub(3,3))
+                                 end
+  opc['CXNN'].exec=function(...) arg=(...) local rnd=math.random(0,0xfff)
+                                           f:write((" saving random value (%s) at V%X with mask %X\n"):format(rnd,arg.x,arg.n))
+                                           vm["v"..("%x"):format(arg.x)]=bit.band(rnd,arg.n)
+                                 end
 
   --preprocess opcodes
   for op,opn in pairs(opc) do
