@@ -103,8 +103,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -222,8 +221,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -341,8 +339,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -460,8 +457,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -579,8 +575,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -698,8 +693,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -817,8 +811,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -936,8 +929,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -1055,8 +1047,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -1174,8 +1165,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -1293,8 +1283,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -1412,8 +1401,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -1531,8 +1519,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -1650,8 +1637,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -1769,8 +1755,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -1888,8 +1873,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2007,8 +1991,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2126,8 +2109,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2245,8 +2227,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2364,8 +2345,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2483,8 +2463,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2602,8 +2581,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2721,8 +2699,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2840,8 +2817,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -2959,8 +2935,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -3078,8 +3053,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -3197,8 +3171,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -3316,8 +3289,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -3435,8 +3407,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -3554,8 +3525,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -3673,8 +3643,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -3792,8 +3761,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -3911,8 +3879,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4030,8 +3997,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4149,8 +4115,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4268,8 +4233,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4387,8 +4351,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4506,8 +4469,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4625,8 +4587,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4744,8 +4705,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4863,8 +4823,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -4982,8 +4941,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -5101,8 +5059,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -5220,8 +5177,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -5339,8 +5295,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -5458,8 +5413,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -5577,8 +5531,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -5696,8 +5649,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -5815,8 +5767,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -5934,8 +5885,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -6053,8 +6003,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -6172,8 +6121,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -6291,8 +6239,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -6410,8 +6357,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -6529,8 +6475,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -6648,8 +6593,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -6767,8 +6711,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -6886,8 +6829,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7005,8 +6947,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7124,8 +7065,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7243,8 +7183,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7362,8 +7301,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7481,8 +7419,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7600,8 +7537,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7719,8 +7655,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7838,8 +7773,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -7957,8 +7891,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -8076,8 +8009,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -8195,8 +8127,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -8314,8 +8245,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -8433,8 +8363,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -8552,8 +8481,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -8671,8 +8599,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -8790,8 +8717,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -8909,8 +8835,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9028,8 +8953,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9147,8 +9071,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9266,8 +9189,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9385,8 +9307,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9504,8 +9425,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9623,8 +9543,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9742,8 +9661,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9861,8 +9779,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -9980,8 +9897,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -10099,8 +10015,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -10218,8 +10133,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -10337,8 +10251,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -10456,8 +10369,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -10575,8 +10487,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -10694,8 +10605,7 @@
  28A| 3F01     SE don't skip anything (VF(0)!=1)
  28C| 12A2     JP jumping to 2a2
  2A2| 6020     LD setting V0 to 20
- 2A4| F018     LD stub!
-                 [x] = 0
+ 2A4| F018     LD setting sound timer to V0(20)
  2A6| 22D4   CALL called routine at 0x2d4
  2D4| A2F2     |   LD setting I to 2f2
  2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
@@ -10764,4 +10674,4104 @@
                  [y] = 0
                  [x] = B
  240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3144) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (212) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3289) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2822) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (593) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3837) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3311) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (1583) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3261) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (277) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2798) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2162) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3271) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (297) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2109) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2855) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2252) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (398) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2667) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (299) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (816) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3299) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2800) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (4067) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2753) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3380) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (4014) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (1501) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (1481) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3862) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3880) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3351) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (3530) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x] = 0
+ 21A| F007     LD setting V0 to timer(0)
+ 21C| 3000     SE skipping the next instruction (V0==0)
+ 220| C717    RND saving random value (2785) at V7 with mask 17
+ 222| 7708    ADD stub!
+                 [x] = 7
+                 [n] = 8
+ 224| 69FF     LD setting V9 to ff
+ 226| A2F0     LD setting I to 2f0
+ 228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 22A| A2EA     LD setting I to 2ea
+ 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 230| 6001     LD setting V0 to 1
+ 232| E0A1   SKNP stub!
+                 [x] = 0
+ 234| 7BFE    ADD stub!
+                 [x] = B
+                 [n] = FE
+ 236| 6004     LD setting V0 to 4
+ 238| E0A1   SKNP stub!
+                 [x] = 0
+ 23A| 7B02    ADD stub!
+                 [x] = B
+                 [n] = 2
+ 23C| 601F     LD setting V0 to 1f
+ 23E| 8B02    AND stub!
+                 [y] = 0
+                 [x] = B
+ 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+ 242| 600C     LD setting V0 to c
+ 244| E0A1   SKNP stub!
+                 [x] = 0
+ 246| 7DFE    ADD stub!
+                 [x] = D
+                 [n] = FE
+ 248| 600D     LD setting V0 to d
+ 24A| E0A1   SKNP stub!
+                 [x] = 0
+ 24C| 7D02    ADD stub!
+                 [x] = D
+                 [n] = 2
+ 24E| 601F     LD setting V0 to 1f
+ 250| 8D02    AND stub!
+                 [y] = 0
+                 [x] = D
+ 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+ 254| A2F0     LD setting I to 2f0
+ 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+ 258| 8684    ADD stub!
+                 [y] = 8
+                 [x] = 6
+ 25A| 8794    ADD stub!
+                 [y] = 9
+                 [x] = 7
+ 25C| 603F     LD setting V0 to 3f
+ 25E| 8602    AND stub!
+                 [y] = 0
+                 [x] = 6
+ 260| 611F     LD setting V1 to 1f
+ 262| 8712    AND stub!
+                 [y] = 1
+                 [x] = 7
+ 264| 4602    SNE stub!
+                 [x] = 6
+                 [n] = 2
+ 266| 1278     JP jumping to 278
+ 278| 6802     LD setting V8 to 2
+ 27A| 6301     LD setting V3 to 1
+ 27C| 8070     LD stub!
+                 [y] = 7
+                 [x] = 0
+ 27E| 80B5    SUB stub!
+                 [y] = B
+                 [x] = 0
+ 280| 128A     JP jumping to 28a
+ 28A| 3F01     SE don't skip anything (VF(0)!=1)
+ 28C| 12A2     JP jumping to 2a2
+ 2A2| 6020     LD setting V0 to 20
+ 2A4| F018     LD setting sound timer to V0(20)
+ 2A6| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2a6 (1 lvls of nesting)
+ 2A8| 8E34    ADD stub!
+                 [y] = 3
+                 [x] = E
+ 2AA| 22D4   CALL called routine at 0x2d4
+ 2D4| A2F2     |   LD setting I to 2f2
+ 2D6| FE33     |   LD saving VE(000) at I(0x2F2) encoding it as bin
+ 2D8| F265     |   LD filling V0 to V2 from mem starting at 0x2F2
+ 2DA| F129     |   LD setting I pointing to the glyph in V1(0)
+ 2DC| 6414     |   LD setting V4 to 14
+ 2DE| 6500     |   LD setting V5 to 0
+ 2E0| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E2| 7415     |  ADD stub!
+                     [x] = 4
+                     [n] = 15
+ 2E4| F229     |   LD setting I pointing to the glyph in V2(0)
+ 2E6| D455     |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+ 2E8|   EE     |  RET returns back to 0x2aa (1 lvls of nesting)
+ 2AC| 663E     LD setting V6 to 3e
+ 2AE| 3301     SE skipping the next instruction (V3==1)
+ 2B2| 68FE     LD setting V8 to fe
+ 2B4| 3301     SE skipping the next instruction (V3==1)
+ 2B8| 1216     JP jumping to 216
+ 216| 6060     LD setting V0 to 60
+ 218| F015     LD stub!
+                 [x]
