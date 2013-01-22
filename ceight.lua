@@ -78,17 +78,20 @@
 
   
   opc['1NNN'].exec=function(...) arg=(...) f:write((" jumping to %x\n"):format(arg.n))
-                                 vm.pc=arg.n-2 end
+                                           vm.pc=arg.n-2
+                                 end
   opc['6XNN'].exec=function(...) arg=(...) f:write((" setting V%X to %x\n"):format(arg.x,arg.n))
-                                 vm["v"..("%x"):format(arg.x)]=arg.n end
+                                           vm["v"..("%x"):format(arg.x)]=arg.n
+                                 end
   opc['ANNN'].exec=function(...) arg=(...) f:write((" setting I to %x\n"):format(arg.n))
-                                 vm.i=arg.n end
-  opc['DXYN'].exec=function(...) arg=(...) f:write((" drawn %d line sprite at (%d,%d) using I: 0x%x\n"):format(arg.n,arg.x,arg.y,vm.i)) end
-  
+                                           vm.i=arg.n
+                                 end
+  opc['DXYN'].exec=function(...) arg=(...) f:write((" drawn %d line sprite at (%d,%d) using I: 0x%x\n"):format(arg.n,arg.x,arg.y,vm.i))
+                                 end
   opc['2NNN'].exec=function(...) arg=(...) f:write((" called routine at 0x%x\n"):format(arg.n))
-                                 vm.stk[max_stak]=vm.pc
-                                 vm.pc=arg.n-2
-                                 max_stak=max_stak+1
+                                           vm.stk[max_stak]=vm.pc
+                                           vm.pc=arg.n-2
+                                           max_stak=max_stak+1
                                  end
   opc['00EE'].exec=function(...) arg=(...) vm.pc=vm.stk[max_stak-1]
                                            f:write((" returns back to 0x%x (%d lvls of nesting)\n"):format(vm.pc,max_stak))
@@ -104,15 +107,6 @@
   opc['FX07'].exec=function(...) arg=(...) f:write((" setting V%X to timer(%X)\n"):format(arg.x,vm.v_dt))
                                            vm["v"..("%x"):format(arg.x)]=vm.v_dt
                                  end
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-
 
   --preprocess opcodes
   for op,opn in pairs(opc) do
