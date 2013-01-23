@@ -20,6 +20,8 @@
   local max_stak=0
   local mem_base=0x200
   
+  vm.v_dt,vm.v_st=0,0
+  
   --predefined array of sprites (glyphs)
   vm.mem={ 0xF0, 0x90, 0x90, 0x90, 0xF0, -- 0
            0x20, 0x60, 0x20, 0x20, 0x70, -- 1
@@ -114,6 +116,9 @@
   opc['FX07'].exec=function(...) arg=(...) f:write((" setting V%X to timer(%X)\n"):format(arg.x,vm.v_dt))
                                            vm["v"..("%x"):format(arg.x)]=vm.v_dt
                                  end
+  opc['FX15'].exec=function(...) arg=(...) f:write((" setting delay timer to V%X(%X)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)]))
+                                           vm.v_dt=vm["v"..("%x"):format(arg.x)]
+                                 end
   opc['FX33'].exec=function(...) arg=(...) local binenc=string.format("%03d",tostring(vm["v"..("%x"):format(arg.x)]))
                                            f:write((" saving V%X(%s) at I(0x%X) encoding it as bin\n"):format(arg.x,binenc,vm.i))
                                            vm.mem[vm.i+0]=tonumber(binenc:sub(1,1))
@@ -146,10 +151,13 @@
                                  end
   opc['8XY4'].exec=function(...) arg=(...) local sum=vm["v"..("%x"):format(arg.x)]+vm["v"..("%x"):format(arg.y)]
                                            f:write((" setting V%X to V%X(%x)+V%X(%x)=%x\n"):format(arg.x, arg.x, vm["v"..("%x"):format(arg.x)], arg.y, vm["v"..("%x"):format(arg.y)], sum))
-                                           vm["v"..("%x"):format(arg.x)]=sum
+                                           vm["v"..("%x"):format(arg.x)]=sum --fixme, add the carry flag thingie
                                  end
   opc['8XY0'].exec=function(...) arg=(...) f:write((" setting V%X to V%X(%x)\n"):format(arg.x, arg.y, vm["v"..("%x"):format(arg.y)]))
                                            vm["v"..("%x"):format(arg.x)]=vm["v"..("%x"):format(arg.y)]
+                                 end
+  opc['EXA1'].exec=function(...) arg=(...) f:write((" key in V%X(%x) not pressed... skipping next instruction\n"):format(arg.x, vm["v"..("%x"):format(arg.x)]))
+                                           vm.pc=vm.pc+2 --fixme (implement input handling)
                                  end
 
   --preprocess opcodes
@@ -175,6 +183,8 @@
   --init program counter to base address
   vm.pc=mem_base
   
+  local ck=os.clock()
+  
   --run the vm
   while true do
       if vm.pc>mem_base+c or vm.pc<mem_base then break end --out of bounds!
@@ -195,6 +205,15 @@
           
           break end
       end
+      
+      --print(os.clock()-ck)
+      if (os.clock()-ck)>.001 then --60hz
+        --print("tick")
+        if vm.v_dt>0 then vm.v_dt=(vm.v_dt)-1 end
+        if vm.v_st>0 then vm.v_st=(vm.v_st)-1 end
+        
+        ck=os.clock()
+     end
 
       vm.pc = vm.pc + 2
   end
