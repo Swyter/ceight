@@ -104,6 +104,13 @@
                                             f:write((" don't skip anything (V%X(%X)!=%X)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)],arg.n))
                                            end
                                  end
+  opc['4XNN'].exec=function(...) arg=(...) if vm["v"..("%x"):format(arg.x)]~=arg.n then
+                                            f:write((" skipping the next instruction (V%X!=%X)\n"):format(arg.x,arg.n))
+                                            vm.pc=vm.pc+2
+                                           else
+                                            f:write((" don't skip anything (V%X(%X)==%X)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)],arg.n))
+                                           end
+                                 end
   opc['FX07'].exec=function(...) arg=(...) f:write((" setting V%X to timer(%X)\n"):format(arg.x,vm.v_dt))
                                            vm["v"..("%x"):format(arg.x)]=vm.v_dt
                                  end
@@ -140,6 +147,9 @@
   opc['8XY4'].exec=function(...) arg=(...) local sum=vm["v"..("%x"):format(arg.x)]+vm["v"..("%x"):format(arg.y)]
                                            f:write((" setting V%X to V%X(%x)+V%X(%x)=%x\n"):format(arg.x, arg.x, vm["v"..("%x"):format(arg.x)], arg.y, vm["v"..("%x"):format(arg.y)], sum))
                                            vm["v"..("%x"):format(arg.x)]=sum
+                                 end
+  opc['8XY0'].exec=function(...) arg=(...) f:write((" setting V%X to V%X(%x)\n"):format(arg.x, arg.y, vm["v"..("%x"):format(arg.y)]))
+                                           vm["v"..("%x"):format(arg.x)]=vm["v"..("%x"):format(arg.y)]
                                  end
 
   --preprocess opcodes
