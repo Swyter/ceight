@@ -10,7 +10,7 @@
       unsigned char vid[64*32];                                     // display resolution is 64×32 pixels, and color is monochrome
       unsigned char mem[0xfff];                                     // from 200h to FFFh, making for 3,584 bytes
       unsigned int stk[16];                                         // stack for returning back from routines
-      unsigned int v0,v1,v2,v3,v4,v5,v6,v7,v8,v9,va,vb,vc,vd,ve,vf; // 16 8-bit data registers named from V0 to VF
+      unsigned int v[0xf];                                          // 16 8-bit data registers named from V0 to VF
       unsigned int v_dt,v_st;                                       // delay and sound timer
       unsigned int i;                                               // the address register, which is named I, is 16 bits wide
       unsigned int pc;                                              // the program counter
@@ -55,7 +55,6 @@
     f:close()
   end
   
-
   function buildargs(base,start,len)
     local  num=tonumber(('0'):rep(start)..
                         ('F'):rep(len)..
@@ -77,18 +76,34 @@
   end
   
   f = assert(io.open("_disasm", "w"))
-
   
+  --load implemented insruction set
   opc['1NNN'].exec=function(...) arg=(...) f:write((" jumping to %x\n"):format(arg.n))
                                            vm.pc=arg.n-2
                                  end
   opc['6XNN'].exec=function(...) arg=(...) f:write((" setting V%X to %x\n"):format(arg.x,arg.n))
-                                           vm["v"..("%x"):format(arg.x)]=arg.n
+                                           vm.v[arg.x]=arg.n
                                  end
   opc['ANNN'].exec=function(...) arg=(...) f:write((" setting I to %x\n"):format(arg.n))
                                            vm.i=arg.n
                                  end
   opc['DXYN'].exec=function(...) arg=(...) f:write((" drawn %d line sprite at (%d,%d) using I: 0x%x\n"):format(arg.n,arg.x,arg.y,vm.i))
+                                           for j=1,arg.n do
+                                            for i=1,8 do
+                                              vm.vid[arg.x+i*arg.y+j]=vm.mem[vm.i+i*j]
+                                            end
+                                           end
+                                           
+                                           v = assert(io.open("_vidout", "w"))
+                                           for y=1,(32) do
+                                            for x=1,(64) do
+                                              local plot=vm.vid[x*y]
+                                              --plot=(plot==0 and "8" or " ")
+                                              v:write(plot)
+                                            end
+                                              v:write('\n')
+                                           end
+                                           v:close()
                                  end
   opc['2NNN'].exec=function(...) arg=(...) f:write((" called routine at 0x%x\n"):format(arg.n))
                                            vm.stk[max_stak]=vm.pc
@@ -99,27 +114,27 @@
                                            f:write((" returns back to 0x%x (%d lvls of nesting)\n"):format(vm.pc,max_stak))
                                            max_stak=max_stak-1
                                  end
-  opc['3XNN'].exec=function(...) arg=(...) if vm["v"..("%x"):format(arg.x)]==arg.n then
+  opc['3XNN'].exec=function(...) arg=(...) if vm.v[arg.x]==arg.n then
                                             f:write((" skipping the next instruction (V%X==%X)\n"):format(arg.x,arg.n))
                                             vm.pc=vm.pc+2
                                            else
-                                            f:write((" don't skip anything (V%X(%X)!=%X)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)],arg.n))
+                                            f:write((" don't skip anything (V%X(%X)!=%X)\n"):format(arg.x,vm.v[arg.x],arg.n))
                                            end
                                  end
-  opc['4XNN'].exec=function(...) arg=(...) if vm["v"..("%x"):format(arg.x)]~=arg.n then
+  opc['4XNN'].exec=function(...) arg=(...) if vm.v[arg.x]~=arg.n then
                                             f:write((" skipping the next instruction (V%X!=%X)\n"):format(arg.x,arg.n))
                                             vm.pc=vm.pc+2
                                            else
-                                            f:write((" don't skip anything (V%X(%X)==%X)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)],arg.n))
+                                            f:write((" don't skip anything (V%X(%X)==%X)\n"):format(arg.x,vm.v[arg.x],arg.n))
                                            end
                                  end
   opc['FX07'].exec=function(...) arg=(...) f:write((" setting V%X to timer(%X)\n"):format(arg.x,vm.v_dt))
-                                           vm["v"..("%x"):format(arg.x)]=vm.v_dt
+                                           vm.v[arg.x]=vm.v_dt
                                  end
-  opc['FX15'].exec=function(...) arg=(...) f:write((" setting delay timer to V%X(%X)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)]))
-                                           vm.v_dt=vm["v"..("%x"):format(arg.x)]
+  opc['FX15'].exec=function(...) arg=(...) f:write((" setting delay timer to V%X(%X)\n"):format(arg.x,vm.v[arg.x]))
+                                           vm.v_dt=vm.v[arg.x]
                                  end
-  opc['FX33'].exec=function(...) arg=(...) local binenc=string.format("%03d",tostring(vm["v"..("%x"):format(arg.x)]))
+  opc['FX33'].exec=function(...) arg=(...) local binenc=string.format("%03d",tostring(vm.v[arg.x]))
                                            f:write((" saving V%X(%s) at I(0x%X) encoding it as bin\n"):format(arg.x,binenc,vm.i))
                                            vm.mem[vm.i+0]=tonumber(binenc:sub(1,1))
                                            vm.mem[vm.i+1]=tonumber(binenc:sub(2,2))
@@ -127,36 +142,40 @@
                                  end
   opc['CXNN'].exec=function(...) arg=(...) local rnd=math.random(0,0xfff)
                                            f:write((" saving random value (%s) at V%X with mask %X\n"):format(rnd,arg.x,arg.n))
-                                           vm["v"..("%x"):format(arg.x)]=bit.band(rnd,arg.n)
+                                           vm.v[arg.x]=bit.band(rnd,arg.n)
                                  end
   opc['FX65'].exec=function(...) arg=(...) f:write((" filling V0 to V%X from mem starting at 0x%X\n"):format(arg.x,vm.i))
                                            for i=0,arg.x do
-                                            vm["v"..("%x"):format(i)]=vm.mem[vm.i+i]
+                                            vm.v[i]=vm.mem[vm.i+i]
                                            end
                                  end
-  opc['FX29'].exec=function(...) arg=(...) f:write((" setting I pointing to the glyph in V%X(%x)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)]))
-                                           vm.i=(vm["v"..("%x"):format(arg.x)])*5
+  opc['FX29'].exec=function(...) arg=(...) f:write((" setting I pointing to the glyph in V%X(%x)\n"):format(arg.x,vm.v[arg.x]))
+                                           vm.i=(vm.v[arg.x])*5
                                  end
-  opc['FX18'].exec=function(...) arg=(...) f:write((" setting sound timer to V%X(%x)\n"):format(arg.x,vm["v"..("%x"):format(arg.x)]))
-                                           vm.v_st=vm["v"..("%x"):format(arg.x)]
+  opc['FX18'].exec=function(...) arg=(...) f:write((" setting sound timer to V%X(%x)\n"):format(arg.x,vm.v[arg.x]))
+                                           vm.v_st=vm.v[arg.x]
                                  end
-  opc['8XY2'].exec=function(...) arg=(...) local band=bit.band(vm["v"..("%x"):format(arg.x)],
-                                                               vm["v"..("%x"):format(arg.y)])
-                                           f:write((" setting V%X to V%X(%x) and V%X(%x)=%x\n"):format(arg.x, arg.x, vm["v"..("%x"):format(arg.x)], arg.y, vm["v"..("%x"):format(arg.y)], band))
-                                           vm["v"..("%x"):format(arg.x)]=band
+  opc['8XY2'].exec=function(...) arg=(...) local band=bit.band(vm.v[arg.x],
+                                                               vm.v[arg.y])
+                                           f:write((" setting V%X to V%X(%x) and V%X(%x)=%x\n"):format(arg.x, arg.x, vm.v[arg.x], arg.y, vm.v[arg.y], band))
+                                           vm.v[arg.x]=band
                                  end
-  opc['7XNN'].exec=function(...) arg=(...) local sum=vm["v"..("%x"):format(arg.x)]+arg.n
-                                           f:write((" setting V%X to V%X(%x)+(%x)=%x\n"):format(arg.x, arg.x, vm["v"..("%x"):format(arg.x)], arg.n, sum))
-                                           vm["v"..("%x"):format(arg.x)]=sum
+  opc['7XNN'].exec=function(...) arg=(...) local sum=vm.v[arg.x]+arg.n
+                                           f:write((" setting V%X to V%X(%x)+(%x)=%x\n"):format(arg.x, arg.x, vm.v[arg.x], arg.n, sum))
+                                           vm.v[arg.x]=sum
                                  end
-  opc['8XY4'].exec=function(...) arg=(...) local sum=vm["v"..("%x"):format(arg.x)]+vm["v"..("%x"):format(arg.y)]
-                                           f:write((" setting V%X to V%X(%x)+V%X(%x)=%x\n"):format(arg.x, arg.x, vm["v"..("%x"):format(arg.x)], arg.y, vm["v"..("%x"):format(arg.y)], sum))
-                                           vm["v"..("%x"):format(arg.x)]=sum --fixme, add the carry flag thingie
+  opc['8XY4'].exec=function(...) arg=(...) local sum=vm.v[arg.x]+vm.v[arg.y]
+                                           f:write((" setting V%X to V%X(%x)+V%X(%x)=%x\n"):format(arg.x, arg.x, vm.v[arg.x], arg.y, vm.v[arg.y], sum))
+                                           vm.v[arg.x]=sum --fixme, add the carry flag thingie
                                  end
-  opc['8XY0'].exec=function(...) arg=(...) f:write((" setting V%X to V%X(%x)\n"):format(arg.x, arg.y, vm["v"..("%x"):format(arg.y)]))
-                                           vm["v"..("%x"):format(arg.x)]=vm["v"..("%x"):format(arg.y)]
+  opc['8XY5'].exec=function(...) arg=(...) local sub=vm.v[arg.y]-vm.v[arg.x]
+                                           f:write((" setting V%X to V%X(%x)-V%X(%x)=%x\n"):format(arg.x, arg.x, vm.v[arg.x], arg.y, vm.v[arg.y], sub))
+                                           vm.v[arg.x]=sub --fixme, add the carry flag thingie
                                  end
-  opc['EXA1'].exec=function(...) arg=(...) f:write((" key in V%X(%x) not pressed... skipping next instruction\n"):format(arg.x, vm["v"..("%x"):format(arg.x)]))
+  opc['8XY0'].exec=function(...) arg=(...) f:write((" setting V%X to V%X(%x)\n"):format(arg.x, arg.y, vm.v[arg.y]))
+                                           vm.v[arg.x]=vm.v[arg.y]
+                                 end
+  opc['EXA1'].exec=function(...) arg=(...) f:write((" key in V%X(%x) not pressed... skipping next instruction\n"):format(arg.x, vm.v[arg.x]))
                                            vm.pc=vm.pc+2 --fixme (implement input handling)
                                  end
 
@@ -200,14 +219,14 @@
           local arg={}
           for nm,ay in pairs(opn.args) do arg[nm]=unpack(by,ay.mask,ay.shift) end
           
-          f:write(string.format("%4X| %4X  %s%5s", vm.pc, by, ('   |'):rep(max_stak), opn.mne ))
+          f:write(string.format("%4X| %4X  %s%5s", vm.pc, by, ('    |'):rep(max_stak), opn.mne ))
           opn.exec(arg)
           
           break end
       end
       
       --print(os.clock()-ck)
-      if (os.clock()-ck)>.001 then --60hz
+      if (os.clock()-ck)>.001 then -- ~60hz
         --print("tick")
         if vm.v_dt>0 then vm.v_dt=(vm.v_dt)-1 end
         if vm.v_st>0 then vm.v_st=(vm.v_st)-1 end
@@ -215,7 +234,7 @@
         ck=os.clock()
      end
 
-      vm.pc = vm.pc + 2
+     vm.pc = vm.pc + 2
   end
   
   f:close()
