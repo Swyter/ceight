@@ -4,7 +4,19 @@
  206| 6D0C     LD setting VD to c
  208| A2EA     LD setting I to 2ea
  20A| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  20C| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  20E| 6E00     LD setting VE to 0
  210| 22D4   CALL called routine at 0x2d4
  2D4| A2F2      |   LD setting I to 2f2
@@ -14,9 +26,19 @@
  2DC| 6414      |   LD setting V4 to 14
  2DE| 6500      |   LD setting V5 to 0
  2E0| D455      |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+11110000  (240) (0)
+10010000  (144) (1)
+10010000  (144) (2)
+10010000  (144) (3)
+11110000  (240) (4)
  2E2| 7415      |  ADD setting V4 to V4(14)+(15)=29
  2E4| F229      |   LD setting I pointing to the glyph in V2(0)
  2E6| D455      |  DRW drawn 5 line sprite at (4,5) using I: 0x0
+11110000  (240) (0)
+10010000  (144) (1)
+10010000  (144) (2)
+10010000  (144) (3)
+11110000  (240) (4)
  2E8|   EE      |  RET returns back to 0x210 (1 lvls of nesting)
  212| 6603     LD setting V6 to 3
  214| 6802     LD setting V8 to 2
@@ -40,8 +62,188 @@
  21A| F007     LD setting V0 to timer(60)
  21C| 3000     SE don't skip anything (V0(60)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(60)
+ 21C| 3000     SE don't skip anything (V0(60)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(5F)
  21C| 3000     SE don't skip anything (V0(5F)!=0)
@@ -115,81 +317,6 @@
  21A| F007     LD setting V0 to timer(5F)
  21C| 3000     SE don't skip anything (V0(5F)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5F)
- 21C| 3000     SE don't skip anything (V0(5F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(5E)
  21C| 3000     SE don't skip anything (V0(5E)!=0)
  21E| 121A     JP jumping to 21a
@@ -301,68 +428,14 @@
  21A| F007     LD setting V0 to timer(5E)
  21C| 3000     SE don't skip anything (V0(5E)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
+ 21A| F007     LD setting V0 to timer(5D)
+ 21C| 3000     SE don't skip anything (V0(5D)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
+ 21A| F007     LD setting V0 to timer(5D)
+ 21C| 3000     SE don't skip anything (V0(5D)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5E)
- 21C| 3000     SE don't skip anything (V0(5E)!=0)
+ 21A| F007     LD setting V0 to timer(5D)
+ 21C| 3000     SE don't skip anything (V0(5D)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(5D)
  21C| 3000     SE don't skip anything (V0(5D)!=0)
@@ -703,116 +776,14 @@
  21A| F007     LD setting V0 to timer(5B)
  21C| 3000     SE don't skip anything (V0(5B)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
+ 21A| F007     LD setting V0 to timer(5B)
+ 21C| 3000     SE don't skip anything (V0(5B)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
+ 21A| F007     LD setting V0 to timer(5B)
+ 21C| 3000     SE don't skip anything (V0(5B)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(5A)
- 21C| 3000     SE don't skip anything (V0(5A)!=0)
+ 21A| F007     LD setting V0 to timer(5B)
+ 21C| 3000     SE don't skip anything (V0(5B)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(5A)
  21C| 3000     SE don't skip anything (V0(5A)!=0)
@@ -1024,8 +995,89 @@
  21A| F007     LD setting V0 to timer(59)
  21C| 3000     SE don't skip anything (V0(59)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(59)
- 21C| 3000     SE don't skip anything (V0(59)!=0)
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(58)
+ 21C| 3000     SE don't skip anything (V0(58)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(58)
  21C| 3000     SE don't skip anything (V0(58)!=0)
@@ -1306,8 +1358,11 @@
  21A| F007     LD setting V0 to timer(57)
  21C| 3000     SE don't skip anything (V0(57)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(56)
- 21C| 3000     SE don't skip anything (V0(56)!=0)
+ 21A| F007     LD setting V0 to timer(57)
+ 21C| 3000     SE don't skip anything (V0(57)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(57)
+ 21C| 3000     SE don't skip anything (V0(57)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(56)
  21C| 3000     SE don't skip anything (V0(56)!=0)
@@ -1540,102 +1595,6 @@
  21A| F007     LD setting V0 to timer(55)
  21C| 3000     SE don't skip anything (V0(55)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(55)
- 21C| 3000     SE don't skip anything (V0(55)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(55)
- 21C| 3000     SE don't skip anything (V0(55)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(55)
- 21C| 3000     SE don't skip anything (V0(55)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(54)
  21C| 3000     SE don't skip anything (V0(54)!=0)
  21E| 121A     JP jumping to 21a
@@ -1753,11 +1712,11 @@
  21A| F007     LD setting V0 to timer(54)
  21C| 3000     SE don't skip anything (V0(54)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
+ 21A| F007     LD setting V0 to timer(53)
+ 21C| 3000     SE don't skip anything (V0(53)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(54)
- 21C| 3000     SE don't skip anything (V0(54)!=0)
+ 21A| F007     LD setting V0 to timer(53)
+ 21C| 3000     SE don't skip anything (V0(53)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(53)
  21C| 3000     SE don't skip anything (V0(53)!=0)
@@ -2344,9 +2303,6 @@
  21A| F007     LD setting V0 to timer(50)
  21C| 3000     SE don't skip anything (V0(50)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(50)
- 21C| 3000     SE don't skip anything (V0(50)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(4F)
  21C| 3000     SE don't skip anything (V0(4F)!=0)
  21E| 121A     JP jumping to 21a
@@ -2466,6 +2422,15 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(4F)
  21C| 3000     SE don't skip anything (V0(4F)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(4F)
+ 21C| 3000     SE don't skip anything (V0(4F)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(4F)
+ 21C| 3000     SE don't skip anything (V0(4F)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(4E)
+ 21C| 3000     SE don't skip anything (V0(4E)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(4E)
  21C| 3000     SE don't skip anything (V0(4E)!=0)
@@ -2689,128 +2654,11 @@
  21A| F007     LD setting V0 to timer(4D)
  21C| 3000     SE don't skip anything (V0(4D)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
+ 21A| F007     LD setting V0 to timer(4D)
+ 21C| 3000     SE don't skip anything (V0(4D)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4C)
- 21C| 3000     SE don't skip anything (V0(4C)!=0)
+ 21A| F007     LD setting V0 to timer(4D)
+ 21C| 3000     SE don't skip anything (V0(4D)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(4C)
  21C| 3000     SE don't skip anything (V0(4C)!=0)
@@ -3016,23 +2864,11 @@
  21A| F007     LD setting V0 to timer(4B)
  21C| 3000     SE don't skip anything (V0(4B)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4B)
- 21C| 3000     SE don't skip anything (V0(4B)!=0)
+ 21A| F007     LD setting V0 to timer(4A)
+ 21C| 3000     SE don't skip anything (V0(4A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4B)
- 21C| 3000     SE don't skip anything (V0(4B)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4B)
- 21C| 3000     SE don't skip anything (V0(4B)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4B)
- 21C| 3000     SE don't skip anything (V0(4B)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4B)
- 21C| 3000     SE don't skip anything (V0(4B)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(4B)
- 21C| 3000     SE don't skip anything (V0(4B)!=0)
+ 21A| F007     LD setting V0 to timer(4A)
+ 21C| 3000     SE don't skip anything (V0(4A)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(4A)
  21C| 3000     SE don't skip anything (V0(4A)!=0)
@@ -3268,9 +3104,6 @@
  21A| F007     LD setting V0 to timer(49)
  21C| 3000     SE don't skip anything (V0(49)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(49)
- 21C| 3000     SE don't skip anything (V0(49)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(48)
  21C| 3000     SE don't skip anything (V0(48)!=0)
  21E| 121A     JP jumping to 21a
@@ -3376,23 +3209,8 @@
  21A| F007     LD setting V0 to timer(48)
  21C| 3000     SE don't skip anything (V0(48)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(48)
- 21C| 3000     SE don't skip anything (V0(48)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(48)
- 21C| 3000     SE don't skip anything (V0(48)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(48)
- 21C| 3000     SE don't skip anything (V0(48)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(48)
- 21C| 3000     SE don't skip anything (V0(48)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(48)
- 21C| 3000     SE don't skip anything (V0(48)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(48)
- 21C| 3000     SE don't skip anything (V0(48)!=0)
+ 21A| F007     LD setting V0 to timer(47)
+ 21C| 3000     SE don't skip anything (V0(47)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(47)
  21C| 3000     SE don't skip anything (V0(47)!=0)
@@ -3730,20 +3548,20 @@
  21A| F007     LD setting V0 to timer(46)
  21C| 3000     SE don't skip anything (V0(46)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(45)
- 21C| 3000     SE don't skip anything (V0(45)!=0)
+ 21A| F007     LD setting V0 to timer(46)
+ 21C| 3000     SE don't skip anything (V0(46)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(45)
- 21C| 3000     SE don't skip anything (V0(45)!=0)
+ 21A| F007     LD setting V0 to timer(46)
+ 21C| 3000     SE don't skip anything (V0(46)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(45)
- 21C| 3000     SE don't skip anything (V0(45)!=0)
+ 21A| F007     LD setting V0 to timer(46)
+ 21C| 3000     SE don't skip anything (V0(46)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(45)
- 21C| 3000     SE don't skip anything (V0(45)!=0)
+ 21A| F007     LD setting V0 to timer(46)
+ 21C| 3000     SE don't skip anything (V0(46)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(45)
- 21C| 3000     SE don't skip anything (V0(45)!=0)
+ 21A| F007     LD setting V0 to timer(46)
+ 21C| 3000     SE don't skip anything (V0(46)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(45)
  21C| 3000     SE don't skip anything (V0(45)!=0)
@@ -3864,126 +3682,6 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(44)
  21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(44)
- 21C| 3000     SE don't skip anything (V0(44)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(43)
- 21C| 3000     SE don't skip anything (V0(43)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(43)
- 21C| 3000     SE don't skip anything (V0(43)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(43)
- 21C| 3000     SE don't skip anything (V0(43)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(43)
  21C| 3000     SE don't skip anything (V0(43)!=0)
@@ -4222,11 +3920,8 @@
  21A| F007     LD setting V0 to timer(42)
  21C| 3000     SE don't skip anything (V0(42)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(41)
- 21C| 3000     SE don't skip anything (V0(41)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(41)
- 21C| 3000     SE don't skip anything (V0(41)!=0)
+ 21A| F007     LD setting V0 to timer(42)
+ 21C| 3000     SE don't skip anything (V0(42)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(41)
  21C| 3000     SE don't skip anything (V0(41)!=0)
@@ -4452,6 +4147,24 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(40)
  21C| 3000     SE don't skip anything (V0(40)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(40)
+ 21C| 3000     SE don't skip anything (V0(40)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3F)
+ 21C| 3000     SE don't skip anything (V0(3F)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3F)
+ 21C| 3000     SE don't skip anything (V0(3F)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3F)
+ 21C| 3000     SE don't skip anything (V0(3F)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3F)
+ 21C| 3000     SE don't skip anything (V0(3F)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3F)
+ 21C| 3000     SE don't skip anything (V0(3F)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(3F)
  21C| 3000     SE don't skip anything (V0(3F)!=0)
@@ -4678,126 +4391,6 @@
  21A| F007     LD setting V0 to timer(3E)
  21C| 3000     SE don't skip anything (V0(3E)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3E)
- 21C| 3000     SE don't skip anything (V0(3E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3D)
- 21C| 3000     SE don't skip anything (V0(3D)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3D)
- 21C| 3000     SE don't skip anything (V0(3D)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3D)
- 21C| 3000     SE don't skip anything (V0(3D)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3D)
- 21C| 3000     SE don't skip anything (V0(3D)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(3D)
  21C| 3000     SE don't skip anything (V0(3D)!=0)
  21E| 121A     JP jumping to 21a
@@ -5016,30 +4609,6 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(3C)
  21C| 3000     SE don't skip anything (V0(3C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3C)
- 21C| 3000     SE don't skip anything (V0(3C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3C)
- 21C| 3000     SE don't skip anything (V0(3C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3C)
- 21C| 3000     SE don't skip anything (V0(3C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3B)
- 21C| 3000     SE don't skip anything (V0(3B)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3B)
- 21C| 3000     SE don't skip anything (V0(3B)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3B)
- 21C| 3000     SE don't skip anything (V0(3B)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3B)
- 21C| 3000     SE don't skip anything (V0(3B)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(3B)
- 21C| 3000     SE don't skip anything (V0(3B)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(3B)
  21C| 3000     SE don't skip anything (V0(3B)!=0)
@@ -5256,6 +4825,21 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(3A)
  21C| 3000     SE don't skip anything (V0(3A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(39)
+ 21C| 3000     SE don't skip anything (V0(39)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(39)
+ 21C| 3000     SE don't skip anything (V0(39)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(39)
+ 21C| 3000     SE don't skip anything (V0(39)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(39)
+ 21C| 3000     SE don't skip anything (V0(39)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(39)
+ 21C| 3000     SE don't skip anything (V0(39)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(39)
  21C| 3000     SE don't skip anything (V0(39)!=0)
@@ -5599,8 +5183,8 @@
  21A| F007     LD setting V0 to timer(38)
  21C| 3000     SE don't skip anything (V0(38)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(37)
- 21C| 3000     SE don't skip anything (V0(37)!=0)
+ 21A| F007     LD setting V0 to timer(38)
+ 21C| 3000     SE don't skip anything (V0(38)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(37)
  21C| 3000     SE don't skip anything (V0(37)!=0)
@@ -5716,17 +5300,14 @@
  21A| F007     LD setting V0 to timer(37)
  21C| 3000     SE don't skip anything (V0(37)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(36)
- 21C| 3000     SE don't skip anything (V0(36)!=0)
+ 21A| F007     LD setting V0 to timer(37)
+ 21C| 3000     SE don't skip anything (V0(37)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(36)
- 21C| 3000     SE don't skip anything (V0(36)!=0)
+ 21A| F007     LD setting V0 to timer(37)
+ 21C| 3000     SE don't skip anything (V0(37)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(36)
- 21C| 3000     SE don't skip anything (V0(36)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(36)
- 21C| 3000     SE don't skip anything (V0(36)!=0)
+ 21A| F007     LD setting V0 to timer(37)
+ 21C| 3000     SE don't skip anything (V0(37)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(36)
  21C| 3000     SE don't skip anything (V0(36)!=0)
@@ -5944,12 +5525,6 @@
  21A| F007     LD setting V0 to timer(35)
  21C| 3000     SE don't skip anything (V0(35)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(35)
- 21C| 3000     SE don't skip anything (V0(35)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(35)
- 21C| 3000     SE don't skip anything (V0(35)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(34)
  21C| 3000     SE don't skip anything (V0(34)!=0)
  21E| 121A     JP jumping to 21a
@@ -6069,6 +5644,27 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(34)
  21C| 3000     SE don't skip anything (V0(34)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(34)
+ 21C| 3000     SE don't skip anything (V0(34)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(33)
+ 21C| 3000     SE don't skip anything (V0(33)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(33)
+ 21C| 3000     SE don't skip anything (V0(33)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(33)
+ 21C| 3000     SE don't skip anything (V0(33)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(33)
+ 21C| 3000     SE don't skip anything (V0(33)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(33)
+ 21C| 3000     SE don't skip anything (V0(33)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(33)
+ 21C| 3000     SE don't skip anything (V0(33)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(33)
  21C| 3000     SE don't skip anything (V0(33)!=0)
@@ -6268,8 +5864,41 @@
  21A| F007     LD setting V0 to timer(32)
  21C| 3000     SE don't skip anything (V0(32)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(31)
- 21C| 3000     SE don't skip anything (V0(31)!=0)
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(32)
+ 21C| 3000     SE don't skip anything (V0(32)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(31)
  21C| 3000     SE don't skip anything (V0(31)!=0)
@@ -6376,8 +6005,20 @@
  21A| F007     LD setting V0 to timer(31)
  21C| 3000     SE don't skip anything (V0(31)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(30)
- 21C| 3000     SE don't skip anything (V0(30)!=0)
+ 21A| F007     LD setting V0 to timer(31)
+ 21C| 3000     SE don't skip anything (V0(31)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(31)
+ 21C| 3000     SE don't skip anything (V0(31)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(31)
+ 21C| 3000     SE don't skip anything (V0(31)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(31)
+ 21C| 3000     SE don't skip anything (V0(31)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(31)
+ 21C| 3000     SE don't skip anything (V0(31)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(30)
  21C| 3000     SE don't skip anything (V0(30)!=0)
@@ -6496,8 +6137,11 @@
  21A| F007     LD setting V0 to timer(30)
  21C| 3000     SE don't skip anything (V0(30)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2F)
- 21C| 3000     SE don't skip anything (V0(2F)!=0)
+ 21A| F007     LD setting V0 to timer(30)
+ 21C| 3000     SE don't skip anything (V0(30)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(30)
+ 21C| 3000     SE don't skip anything (V0(30)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(2F)
  21C| 3000     SE don't skip anything (V0(2F)!=0)
@@ -6600,39 +6244,6 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(2F)
  21C| 3000     SE don't skip anything (V0(2F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2F)
- 21C| 3000     SE don't skip anything (V0(2F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2F)
- 21C| 3000     SE don't skip anything (V0(2F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2F)
- 21C| 3000     SE don't skip anything (V0(2F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2F)
- 21C| 3000     SE don't skip anything (V0(2F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2F)
- 21C| 3000     SE don't skip anything (V0(2F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2F)
- 21C| 3000     SE don't skip anything (V0(2F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2F)
- 21C| 3000     SE don't skip anything (V0(2F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2E)
- 21C| 3000     SE don't skip anything (V0(2E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2E)
- 21C| 3000     SE don't skip anything (V0(2E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2E)
- 21C| 3000     SE don't skip anything (V0(2E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2E)
- 21C| 3000     SE don't skip anything (V0(2E)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(2E)
  21C| 3000     SE don't skip anything (V0(2E)!=0)
@@ -6855,117 +6466,6 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(2D)
  21C| 3000     SE don't skip anything (V0(2D)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2D)
- 21C| 3000     SE don't skip anything (V0(2D)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2D)
- 21C| 3000     SE don't skip anything (V0(2D)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2D)
- 21C| 3000     SE don't skip anything (V0(2D)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2C)
- 21C| 3000     SE don't skip anything (V0(2C)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(2C)
  21C| 3000     SE don't skip anything (V0(2C)!=0)
@@ -7186,8 +6686,32 @@
  21A| F007     LD setting V0 to timer(2B)
  21C| 3000     SE don't skip anything (V0(2B)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(2A)
- 21C| 3000     SE don't skip anything (V0(2A)!=0)
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2B)
+ 21C| 3000     SE don't skip anything (V0(2B)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(2A)
  21C| 3000     SE don't skip anything (V0(2A)!=0)
@@ -7306,8 +6830,14 @@
  21A| F007     LD setting V0 to timer(2A)
  21C| 3000     SE don't skip anything (V0(2A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(29)
- 21C| 3000     SE don't skip anything (V0(29)!=0)
+ 21A| F007     LD setting V0 to timer(2A)
+ 21C| 3000     SE don't skip anything (V0(2A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2A)
+ 21C| 3000     SE don't skip anything (V0(2A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(2A)
+ 21C| 3000     SE don't skip anything (V0(2A)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(29)
  21C| 3000     SE don't skip anything (V0(29)!=0)
@@ -7429,8 +6959,8 @@
  21A| F007     LD setting V0 to timer(29)
  21C| 3000     SE don't skip anything (V0(29)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(28)
- 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21A| F007     LD setting V0 to timer(29)
+ 21C| 3000     SE don't skip anything (V0(29)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(28)
  21C| 3000     SE don't skip anything (V0(28)!=0)
@@ -7555,20 +7085,98 @@
  21A| F007     LD setting V0 to timer(28)
  21C| 3000     SE don't skip anything (V0(28)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(27)
- 21C| 3000     SE don't skip anything (V0(27)!=0)
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(27)
- 21C| 3000     SE don't skip anything (V0(27)!=0)
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(27)
- 21C| 3000     SE don't skip anything (V0(27)!=0)
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(27)
- 21C| 3000     SE don't skip anything (V0(27)!=0)
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(27)
- 21C| 3000     SE don't skip anything (V0(27)!=0)
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(28)
+ 21C| 3000     SE don't skip anything (V0(28)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(27)
  21C| 3000     SE don't skip anything (V0(27)!=0)
@@ -7788,6 +7396,15 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(26)
  21C| 3000     SE don't skip anything (V0(26)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(26)
+ 21C| 3000     SE don't skip anything (V0(26)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(25)
+ 21C| 3000     SE don't skip anything (V0(25)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(25)
+ 21C| 3000     SE don't skip anything (V0(25)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(25)
  21C| 3000     SE don't skip anything (V0(25)!=0)
@@ -8011,8 +7628,26 @@
  21A| F007     LD setting V0 to timer(24)
  21C| 3000     SE don't skip anything (V0(24)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(23)
- 21C| 3000     SE don't skip anything (V0(23)!=0)
+ 21A| F007     LD setting V0 to timer(24)
+ 21C| 3000     SE don't skip anything (V0(24)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(24)
+ 21C| 3000     SE don't skip anything (V0(24)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(24)
+ 21C| 3000     SE don't skip anything (V0(24)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(24)
+ 21C| 3000     SE don't skip anything (V0(24)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(24)
+ 21C| 3000     SE don't skip anything (V0(24)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(24)
+ 21C| 3000     SE don't skip anything (V0(24)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(24)
+ 21C| 3000     SE don't skip anything (V0(24)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(23)
  21C| 3000     SE don't skip anything (V0(23)!=0)
@@ -8125,8 +7760,17 @@
  21A| F007     LD setting V0 to timer(23)
  21C| 3000     SE don't skip anything (V0(23)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(22)
- 21C| 3000     SE don't skip anything (V0(22)!=0)
+ 21A| F007     LD setting V0 to timer(23)
+ 21C| 3000     SE don't skip anything (V0(23)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(23)
+ 21C| 3000     SE don't skip anything (V0(23)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(23)
+ 21C| 3000     SE don't skip anything (V0(23)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(23)
+ 21C| 3000     SE don't skip anything (V0(23)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(22)
  21C| 3000     SE don't skip anything (V0(22)!=0)
@@ -8233,23 +7877,11 @@
  21A| F007     LD setting V0 to timer(22)
  21C| 3000     SE don't skip anything (V0(22)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(22)
- 21C| 3000     SE don't skip anything (V0(22)!=0)
+ 21A| F007     LD setting V0 to timer(21)
+ 21C| 3000     SE don't skip anything (V0(21)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(22)
- 21C| 3000     SE don't skip anything (V0(22)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(22)
- 21C| 3000     SE don't skip anything (V0(22)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(22)
- 21C| 3000     SE don't skip anything (V0(22)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(22)
- 21C| 3000     SE don't skip anything (V0(22)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(22)
- 21C| 3000     SE don't skip anything (V0(22)!=0)
+ 21A| F007     LD setting V0 to timer(21)
+ 21C| 3000     SE don't skip anything (V0(21)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(21)
  21C| 3000     SE don't skip anything (V0(21)!=0)
@@ -8479,9 +8111,6 @@
  21A| F007     LD setting V0 to timer(20)
  21C| 3000     SE don't skip anything (V0(20)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(20)
- 21C| 3000     SE don't skip anything (V0(20)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(1F)
  21C| 3000     SE don't skip anything (V0(1F)!=0)
  21E| 121A     JP jumping to 21a
@@ -8589,237 +8218,6 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(1F)
  21C| 3000     SE don't skip anything (V0(1F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1F)
- 21C| 3000     SE don't skip anything (V0(1F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1F)
- 21C| 3000     SE don't skip anything (V0(1F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1F)
- 21C| 3000     SE don't skip anything (V0(1F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1F)
- 21C| 3000     SE don't skip anything (V0(1F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1E)
- 21C| 3000     SE don't skip anything (V0(1E)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(1E)
  21C| 3000     SE don't skip anything (V0(1E)!=0)
@@ -8934,24 +8332,6 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(1D)
  21C| 3000     SE don't skip anything (V0(1D)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1C)
- 21C| 3000     SE don't skip anything (V0(1C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1C)
- 21C| 3000     SE don't skip anything (V0(1C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1C)
- 21C| 3000     SE don't skip anything (V0(1C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1C)
- 21C| 3000     SE don't skip anything (V0(1C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1C)
- 21C| 3000     SE don't skip anything (V0(1C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(1C)
- 21C| 3000     SE don't skip anything (V0(1C)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(1C)
  21C| 3000     SE don't skip anything (V0(1C)!=0)
@@ -9274,26 +8654,131 @@
  21A| F007     LD setting V0 to timer(1A)
  21C| 3000     SE don't skip anything (V0(1A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(19)
- 21C| 3000     SE don't skip anything (V0(19)!=0)
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(19)
- 21C| 3000     SE don't skip anything (V0(19)!=0)
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(19)
- 21C| 3000     SE don't skip anything (V0(19)!=0)
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(19)
- 21C| 3000     SE don't skip anything (V0(19)!=0)
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(19)
- 21C| 3000     SE don't skip anything (V0(19)!=0)
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(19)
- 21C| 3000     SE don't skip anything (V0(19)!=0)
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(19)
- 21C| 3000     SE don't skip anything (V0(19)!=0)
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1A)
+ 21C| 3000     SE don't skip anything (V0(1A)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(19)
  21C| 3000     SE don't skip anything (V0(19)!=0)
@@ -9513,12 +8998,6 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(18)
  21C| 3000     SE don't skip anything (V0(18)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(17)
- 21C| 3000     SE don't skip anything (V0(17)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(17)
- 21C| 3000     SE don't skip anything (V0(17)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(17)
  21C| 3000     SE don't skip anything (V0(17)!=0)
@@ -9736,104 +9215,8 @@
  21A| F007     LD setting V0 to timer(16)
  21C| 3000     SE don't skip anything (V0(16)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(15)
- 21C| 3000     SE don't skip anything (V0(15)!=0)
+ 21A| F007     LD setting V0 to timer(16)
+ 21C| 3000     SE don't skip anything (V0(16)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(15)
  21C| 3000     SE don't skip anything (V0(15)!=0)
@@ -9946,20 +9329,8 @@
  21A| F007     LD setting V0 to timer(14)
  21C| 3000     SE don't skip anything (V0(14)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(14)
- 21C| 3000     SE don't skip anything (V0(14)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(14)
- 21C| 3000     SE don't skip anything (V0(14)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(14)
- 21C| 3000     SE don't skip anything (V0(14)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(14)
- 21C| 3000     SE don't skip anything (V0(14)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(14)
- 21C| 3000     SE don't skip anything (V0(14)!=0)
+ 21A| F007     LD setting V0 to timer(13)
+ 21C| 3000     SE don't skip anything (V0(13)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(13)
  21C| 3000     SE don't skip anything (V0(13)!=0)
@@ -10074,6 +9445,9 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(13)
  21C| 3000     SE don't skip anything (V0(13)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(12)
+ 21C| 3000     SE don't skip anything (V0(12)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(12)
  21C| 3000     SE don't skip anything (V0(12)!=0)
@@ -10549,87 +9923,6 @@
  21A| F007     LD setting V0 to timer(F)
  21C| 3000     SE don't skip anything (V0(F)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(F)
- 21C| 3000     SE don't skip anything (V0(F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(F)
- 21C| 3000     SE don't skip anything (V0(F)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(E)
  21C| 3000     SE don't skip anything (V0(E)!=0)
  21E| 121A     JP jumping to 21a
@@ -10738,32 +10031,8 @@
  21A| F007     LD setting V0 to timer(E)
  21C| 3000     SE don't skip anything (V0(E)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(E)
- 21C| 3000     SE don't skip anything (V0(E)!=0)
+ 21A| F007     LD setting V0 to timer(D)
+ 21C| 3000     SE don't skip anything (V0(D)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(D)
  21C| 3000     SE don't skip anything (V0(D)!=0)
@@ -10993,11 +10262,8 @@
  21A| F007     LD setting V0 to timer(C)
  21C| 3000     SE don't skip anything (V0(C)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(C)
- 21C| 3000     SE don't skip anything (V0(C)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(C)
- 21C| 3000     SE don't skip anything (V0(C)!=0)
+ 21A| F007     LD setting V0 to timer(B)
+ 21C| 3000     SE don't skip anything (V0(B)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(B)
  21C| 3000     SE don't skip anything (V0(B)!=0)
@@ -11241,6 +10507,12 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(A)
  21C| 3000     SE don't skip anything (V0(A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(A)
+ 21C| 3000     SE don't skip anything (V0(A)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(9)
+ 21C| 3000     SE don't skip anything (V0(9)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(9)
  21C| 3000     SE don't skip anything (V0(9)!=0)
@@ -11473,8 +10745,11 @@
  21A| F007     LD setting V0 to timer(8)
  21C| 3000     SE don't skip anything (V0(8)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(7)
- 21C| 3000     SE don't skip anything (V0(7)!=0)
+ 21A| F007     LD setting V0 to timer(8)
+ 21C| 3000     SE don't skip anything (V0(8)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(8)
+ 21C| 3000     SE don't skip anything (V0(8)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(7)
  21C| 3000     SE don't skip anything (V0(7)!=0)
@@ -11575,33 +10850,6 @@
  21A| F007     LD setting V0 to timer(7)
  21C| 3000     SE don't skip anything (V0(7)!=0)
  21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(7)
- 21C| 3000     SE don't skip anything (V0(7)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(7)
- 21C| 3000     SE don't skip anything (V0(7)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(7)
- 21C| 3000     SE don't skip anything (V0(7)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(6)
- 21C| 3000     SE don't skip anything (V0(6)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(6)
- 21C| 3000     SE don't skip anything (V0(6)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(6)
- 21C| 3000     SE don't skip anything (V0(6)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(6)
- 21C| 3000     SE don't skip anything (V0(6)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(6)
- 21C| 3000     SE don't skip anything (V0(6)!=0)
- 21E| 121A     JP jumping to 21a
- 21A| F007     LD setting V0 to timer(6)
- 21C| 3000     SE don't skip anything (V0(6)!=0)
- 21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(6)
  21C| 3000     SE don't skip anything (V0(6)!=0)
  21E| 121A     JP jumping to 21a
@@ -11952,6 +11200,129 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(4)
  21C| 3000     SE don't skip anything (V0(4)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(4)
+ 21C| 3000     SE don't skip anything (V0(4)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(3)
+ 21C| 3000     SE don't skip anything (V0(3)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(3)
  21C| 3000     SE don't skip anything (V0(3)!=0)
@@ -12198,6 +11569,15 @@
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(2)
  21C| 3000     SE don't skip anything (V0(2)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1)
+ 21C| 3000     SE don't skip anything (V0(1)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1)
+ 21C| 3000     SE don't skip anything (V0(1)!=0)
+ 21E| 121A     JP jumping to 21a
+ 21A| F007     LD setting V0 to timer(1)
+ 21C| 3000     SE don't skip anything (V0(1)!=0)
  21E| 121A     JP jumping to 21a
  21A| F007     LD setting V0 to timer(1)
  21C| 3000     SE don't skip anything (V0(1)!=0)
@@ -12317,9 +11697,22 @@
  224| 69FF     LD setting V9 to ff
  226| A2F0     LD setting I to 2f0
  228| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+10000000  (128) (2F0)
  22A| A2EA     LD setting I to 2ea
  22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  230| 6001     LD setting V0 to 1
  232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
  236| 6004     LD setting V0 to 4
@@ -12327,6 +11720,12 @@
  23C| 601F     LD setting V0 to 1f
  23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
  240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  242| 600C     LD setting V0 to c
  244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
  248| 600D     LD setting V0 to d
@@ -12334,8 +11733,15 @@
  24E| 601F     LD setting V0 to 1f
  250| 8D02    AND setting VD to VD(c) and V0(1f)=c
  252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  254| A2F0     LD setting I to 2f0
  256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+10000000  (128) (2F0)
  258| 8684    ADD setting V6 to V6(3)+V8(2)=5
  25A| 8794    ADD setting V7 to V7(1d)+V9(ff)=11c
  25C| 603F     LD setting V0 to 3f
@@ -12347,10 +11753,23 @@
  26C| 471F    SNE skipping the next instruction (V7!=1F)
  270| 4700    SNE skipping the next instruction (V7!=0)
  274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+10000000  (128) (2F0)
  276| 122A     JP jumping to 22a
  22A| A2EA     LD setting I to 2ea
  22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  230| 6001     LD setting V0 to 1
  232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
  236| 6004     LD setting V0 to 4
@@ -12358,6 +11777,12 @@
  23C| 601F     LD setting V0 to 1f
  23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
  240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  242| 600C     LD setting V0 to c
  244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
  248| 600D     LD setting V0 to d
@@ -12365,8 +11790,15 @@
  24E| 601F     LD setting V0 to 1f
  250| 8D02    AND setting VD to VD(c) and V0(1f)=c
  252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  254| A2F0     LD setting I to 2f0
  256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+10000000  (128) (2F0)
  258| 8684    ADD setting V6 to V6(5)+V8(2)=7
  25A| 8794    ADD setting V7 to V7(1c)+V9(ff)=11b
  25C| 603F     LD setting V0 to 3f
@@ -12378,10 +11810,23 @@
  26C| 471F    SNE skipping the next instruction (V7!=1F)
  270| 4700    SNE skipping the next instruction (V7!=0)
  274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+10000000  (128) (2F0)
  276| 122A     JP jumping to 22a
  22A| A2EA     LD setting I to 2ea
  22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  230| 6001     LD setting V0 to 1
  232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
  236| 6004     LD setting V0 to 4
@@ -12389,6 +11834,12 @@
  23C| 601F     LD setting V0 to 1f
  23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
  240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  242| 600C     LD setting V0 to c
  244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
  248| 600D     LD setting V0 to d
@@ -12396,8 +11847,15 @@
  24E| 601F     LD setting V0 to 1f
  250| 8D02    AND setting VD to VD(c) and V0(1f)=c
  252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  254| A2F0     LD setting I to 2f0
  256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+10000000  (128) (2F0)
  258| 8684    ADD setting V6 to V6(7)+V8(2)=9
  25A| 8794    ADD setting V7 to V7(1b)+V9(ff)=11a
  25C| 603F     LD setting V0 to 3f
@@ -12409,10 +11867,23 @@
  26C| 471F    SNE skipping the next instruction (V7!=1F)
  270| 4700    SNE skipping the next instruction (V7!=0)
  274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
+10000000  (128) (2F0)
  276| 122A     JP jumping to 22a
  22A| A2EA     LD setting I to 2ea
  22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)
  230| 6001     LD setting V0 to 1
  232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
  236| 6004     LD setting V0 to 4
@@ -12420,239 +11891,9 @@
  23C| 601F     LD setting V0 to 1f
  23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
  240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD setting V0 to c
- 244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
- 248| 600D     LD setting V0 to d
- 24A| E0A1   SKNP key in V0(d) not pressed... skipping next instruction
- 24E| 601F     LD setting V0 to 1f
- 250| 8D02    AND setting VD to VD(c) and V0(1f)=c
- 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 254| A2F0     LD setting I to 2f0
- 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 258| 8684    ADD setting V6 to V6(9)+V8(2)=b
- 25A| 8794    ADD setting V7 to V7(1a)+V9(ff)=119
- 25C| 603F     LD setting V0 to 3f
- 25E| 8602    AND setting V6 to V6(b) and V0(3f)=b
- 260| 611F     LD setting V1 to 1f
- 262| 8712    AND setting V7 to V7(119) and V1(1f)=19
- 264| 4602    SNE skipping the next instruction (V6!=2)
- 268| 463F    SNE skipping the next instruction (V6!=3F)
- 26C| 471F    SNE skipping the next instruction (V7!=1F)
- 270| 4700    SNE skipping the next instruction (V7!=0)
- 274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 276| 122A     JP jumping to 22a
- 22A| A2EA     LD setting I to 2ea
- 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 230| 6001     LD setting V0 to 1
- 232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
- 236| 6004     LD setting V0 to 4
- 238| E0A1   SKNP key in V0(4) not pressed... skipping next instruction
- 23C| 601F     LD setting V0 to 1f
- 23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
- 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD setting V0 to c
- 244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
- 248| 600D     LD setting V0 to d
- 24A| E0A1   SKNP key in V0(d) not pressed... skipping next instruction
- 24E| 601F     LD setting V0 to 1f
- 250| 8D02    AND setting VD to VD(c) and V0(1f)=c
- 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 254| A2F0     LD setting I to 2f0
- 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 258| 8684    ADD setting V6 to V6(b)+V8(2)=d
- 25A| 8794    ADD setting V7 to V7(19)+V9(ff)=118
- 25C| 603F     LD setting V0 to 3f
- 25E| 8602    AND setting V6 to V6(d) and V0(3f)=d
- 260| 611F     LD setting V1 to 1f
- 262| 8712    AND setting V7 to V7(118) and V1(1f)=18
- 264| 4602    SNE skipping the next instruction (V6!=2)
- 268| 463F    SNE skipping the next instruction (V6!=3F)
- 26C| 471F    SNE skipping the next instruction (V7!=1F)
- 270| 4700    SNE skipping the next instruction (V7!=0)
- 274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 276| 122A     JP jumping to 22a
- 22A| A2EA     LD setting I to 2ea
- 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 230| 6001     LD setting V0 to 1
- 232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
- 236| 6004     LD setting V0 to 4
- 238| E0A1   SKNP key in V0(4) not pressed... skipping next instruction
- 23C| 601F     LD setting V0 to 1f
- 23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
- 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD setting V0 to c
- 244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
- 248| 600D     LD setting V0 to d
- 24A| E0A1   SKNP key in V0(d) not pressed... skipping next instruction
- 24E| 601F     LD setting V0 to 1f
- 250| 8D02    AND setting VD to VD(c) and V0(1f)=c
- 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 254| A2F0     LD setting I to 2f0
- 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 258| 8684    ADD setting V6 to V6(d)+V8(2)=f
- 25A| 8794    ADD setting V7 to V7(18)+V9(ff)=117
- 25C| 603F     LD setting V0 to 3f
- 25E| 8602    AND setting V6 to V6(f) and V0(3f)=f
- 260| 611F     LD setting V1 to 1f
- 262| 8712    AND setting V7 to V7(117) and V1(1f)=17
- 264| 4602    SNE skipping the next instruction (V6!=2)
- 268| 463F    SNE skipping the next instruction (V6!=3F)
- 26C| 471F    SNE skipping the next instruction (V7!=1F)
- 270| 4700    SNE skipping the next instruction (V7!=0)
- 274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 276| 122A     JP jumping to 22a
- 22A| A2EA     LD setting I to 2ea
- 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 230| 6001     LD setting V0 to 1
- 232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
- 236| 6004     LD setting V0 to 4
- 238| E0A1   SKNP key in V0(4) not pressed... skipping next instruction
- 23C| 601F     LD setting V0 to 1f
- 23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
- 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD setting V0 to c
- 244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
- 248| 600D     LD setting V0 to d
- 24A| E0A1   SKNP key in V0(d) not pressed... skipping next instruction
- 24E| 601F     LD setting V0 to 1f
- 250| 8D02    AND setting VD to VD(c) and V0(1f)=c
- 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 254| A2F0     LD setting I to 2f0
- 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 258| 8684    ADD setting V6 to V6(f)+V8(2)=11
- 25A| 8794    ADD setting V7 to V7(17)+V9(ff)=116
- 25C| 603F     LD setting V0 to 3f
- 25E| 8602    AND setting V6 to V6(11) and V0(3f)=11
- 260| 611F     LD setting V1 to 1f
- 262| 8712    AND setting V7 to V7(116) and V1(1f)=16
- 264| 4602    SNE skipping the next instruction (V6!=2)
- 268| 463F    SNE skipping the next instruction (V6!=3F)
- 26C| 471F    SNE skipping the next instruction (V7!=1F)
- 270| 4700    SNE skipping the next instruction (V7!=0)
- 274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 276| 122A     JP jumping to 22a
- 22A| A2EA     LD setting I to 2ea
- 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 230| 6001     LD setting V0 to 1
- 232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
- 236| 6004     LD setting V0 to 4
- 238| E0A1   SKNP key in V0(4) not pressed... skipping next instruction
- 23C| 601F     LD setting V0 to 1f
- 23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
- 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD setting V0 to c
- 244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
- 248| 600D     LD setting V0 to d
- 24A| E0A1   SKNP key in V0(d) not pressed... skipping next instruction
- 24E| 601F     LD setting V0 to 1f
- 250| 8D02    AND setting VD to VD(c) and V0(1f)=c
- 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 254| A2F0     LD setting I to 2f0
- 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 258| 8684    ADD setting V6 to V6(11)+V8(2)=13
- 25A| 8794    ADD setting V7 to V7(16)+V9(ff)=115
- 25C| 603F     LD setting V0 to 3f
- 25E| 8602    AND setting V6 to V6(13) and V0(3f)=13
- 260| 611F     LD setting V1 to 1f
- 262| 8712    AND setting V7 to V7(115) and V1(1f)=15
- 264| 4602    SNE skipping the next instruction (V6!=2)
- 268| 463F    SNE skipping the next instruction (V6!=3F)
- 26C| 471F    SNE skipping the next instruction (V7!=1F)
- 270| 4700    SNE skipping the next instruction (V7!=0)
- 274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 276| 122A     JP jumping to 22a
- 22A| A2EA     LD setting I to 2ea
- 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 230| 6001     LD setting V0 to 1
- 232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
- 236| 6004     LD setting V0 to 4
- 238| E0A1   SKNP key in V0(4) not pressed... skipping next instruction
- 23C| 601F     LD setting V0 to 1f
- 23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
- 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD setting V0 to c
- 244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
- 248| 600D     LD setting V0 to d
- 24A| E0A1   SKNP key in V0(d) not pressed... skipping next instruction
- 24E| 601F     LD setting V0 to 1f
- 250| 8D02    AND setting VD to VD(c) and V0(1f)=c
- 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 254| A2F0     LD setting I to 2f0
- 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 258| 8684    ADD setting V6 to V6(13)+V8(2)=15
- 25A| 8794    ADD setting V7 to V7(15)+V9(ff)=114
- 25C| 603F     LD setting V0 to 3f
- 25E| 8602    AND setting V6 to V6(15) and V0(3f)=15
- 260| 611F     LD setting V1 to 1f
- 262| 8712    AND setting V7 to V7(114) and V1(1f)=14
- 264| 4602    SNE skipping the next instruction (V6!=2)
- 268| 463F    SNE skipping the next instruction (V6!=3F)
- 26C| 471F    SNE skipping the next instruction (V7!=1F)
- 270| 4700    SNE skipping the next instruction (V7!=0)
- 274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 276| 122A     JP jumping to 22a
- 22A| A2EA     LD setting I to 2ea
- 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 230| 6001     LD setting V0 to 1
- 232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
- 236| 6004     LD setting V0 to 4
- 238| E0A1   SKNP key in V0(4) not pressed... skipping next instruction
- 23C| 601F     LD setting V0 to 1f
- 23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
- 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD setting V0 to c
- 244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
- 248| 600D     LD setting V0 to d
- 24A| E0A1   SKNP key in V0(d) not pressed... skipping next instruction
- 24E| 601F     LD setting V0 to 1f
- 250| 8D02    AND setting VD to VD(c) and V0(1f)=c
- 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 254| A2F0     LD setting I to 2f0
- 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 258| 8684    ADD setting V6 to V6(15)+V8(2)=17
- 25A| 8794    ADD setting V7 to V7(14)+V9(ff)=113
- 25C| 603F     LD setting V0 to 3f
- 25E| 8602    AND setting V6 to V6(17) and V0(3f)=17
- 260| 611F     LD setting V1 to 1f
- 262| 8712    AND setting V7 to V7(113) and V1(1f)=13
- 264| 4602    SNE skipping the next instruction (V6!=2)
- 268| 463F    SNE skipping the next instruction (V6!=3F)
- 26C| 471F    SNE skipping the next instruction (V7!=1F)
- 270| 4700    SNE skipping the next instruction (V7!=0)
- 274| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 276| 122A     JP jumping to 22a
- 22A| A2EA     LD setting I to 2ea
- 22C| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 22E| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 230| 6001     LD setting V0 to 1
- 232| E0A1   SKNP key in V0(1) not pressed... skipping next instruction
- 236| 6004     LD setting V0 to 4
- 238| E0A1   SKNP key in V0(4) not pressed... skipping next instruction
- 23C| 601F     LD setting V0 to 1f
- 23E| 8B02    AND setting VB to VB(c) and V0(1f)=c
- 240| DAB6    DRW drawn 6 line sprite at (10,11) using I: 0x2ea
- 242| 600C     LD setting V0 to c
- 244| E0A1   SKNP key in V0(c) not pressed... skipping next instruction
- 248| 600D     LD setting V0 to d
- 24A| E0A1   SKNP key in V0(d) not pressed... skipping next instruction
- 24E| 601F     LD setting V0 to 1f
- 250| 8D02    AND setting VD to VD(c) and V0(1f)=c
- 252| DCD6    DRW drawn 6 line sprite at (12,13) using I: 0x2ea
- 254| A2F0     LD setting I to 2f0
- 256| D671    DRW drawn 1 line sprite at (6,7) using I: 0x2f0
- 258| 8684    ADD setting V6 to V6(17)+V8(2)=19
- 25A| 8794    ADD setting V7 to V7(13)+V9(ff)=112
- 25C| 603F     LD setting V0 to 3f
- 25E| 8602    AND setting V6 to V6(19) and V0(3f)=19
- 260| 611F     LD setting V1 to 1f
- 262| 8712    AND setting V7 to V7(112) and V1(1f)=12
- 264| 4602    SNE skipping the next instruction (V6!=2)
- 268| 463F    SNE skipping the next instruction (V6!=3F)
- 26C| 471F    SNE skipping the next instruction (V7!=1F)
- 270| 4700    SNE skipping the next instruction (V7!=0)
+10000000  (128) (2EA)
+10000000  (128) (2EB)
+10000000  (128) (2EC)
+10000000  (128) (2ED)
+10000000  (128) (2EE)
+10000000  (128) (2EF)

@@ -88,17 +88,21 @@
                                            vm.i=arg.n
                                  end
   opc['DXYN'].exec=function(...) arg=(...) f:write((" drawn %d line sprite at (%d,%d) using I: 0x%x\n"):format(arg.n,arg.x,arg.y,vm.i))
-                                           for j=1,arg.n do
+                                           for j=0,arg.n-1 do
                                             for i=1,8 do
-                                              vm.vid[arg.x+i*arg.y+j]=vm.mem[vm.i+i*j]
+                                              
+                                              local thingie=bit.band(bit.rshift(vm.mem[vm.i+j], 8-i), 1)
+                                              vm.vid[arg.x+i*arg.y+j]=thingie--vm.mem[vm.i+i*j]
+                                              f:write(thingie)
                                             end
+                                              f:write("  ("..vm.mem[vm.i+j]..") ("..string.format("%X",vm.i+j)..")\n")
                                            end
                                            
                                            v = assert(io.open("_vidout", "w"))
                                            for y=1,(32) do
                                             for x=1,(64) do
                                               local plot=vm.vid[x*y]
-                                              --plot=(plot==0 and "8" or " ")
+                                              plot=(plot==0 and "8" or "-")
                                               v:write(plot)
                                             end
                                               v:write('\n')
