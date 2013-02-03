@@ -88,24 +88,35 @@
                                            vm.i=arg.n
                                  end
   opc['DXYN'].exec=function(...) arg=(...) f:write((" drawn %d line sprite at (%d,%d) using I: 0x%x\n"):format(arg.n,arg.x,arg.y,vm.i))
-                                           for j=0,arg.n-1 do
-                                            for i=1,8 do
+                                           vm.v[0xf]=0
+                                           for line=0,arg.n-1 do
+                                            local lbyte=vm.mem[vm.i+line]
+                                            for byt=0,7 do
+                                              local lbit=bit.band(bit.rshift(lbyte, 7-byt), 1)
+                                              local lx=arg.x+byt
+                                              local ly=arg.y+line
                                               
-                                              local thingie=bit.band(bit.rshift(vm.mem[vm.i+j], 8-i), 1)
-                                              vm.vid[arg.x+i*arg.y+j]=thingie--vm.mem[vm.i+i*j]
-                                              f:write(thingie)
+                                              local bxor=bit.bxor(vm.vid[lx+(64*ly)],lbit)
+                                              
+                                              if bxor==0 then
+                                                vm.v[0xf]=1
+                                              end
+                                              
+                                              vm.vid[lx+(64*ly)]=bxor--vm.mem[vm.i+i*j]
+                                              f:write(lbit==1 and "#" or " ")
+                                              --f:write(string.format("x:%d y:%d ind:%d",lx,ly,lx+(64*ly)))
                                             end
-                                              f:write("  ("..vm.mem[vm.i+j]..") ("..string.format("%X",vm.i+j)..")\n")
+                                              f:write("  ("..lbyte..") ("..string.format("%X",vm.i+line)..")\n")
                                            end
                                            
                                            v = assert(io.open("_vidout", "w"))
-                                           for y=1,(32) do
-                                            for x=1,(64) do
-                                              local plot=vm.vid[x*y]
-                                              plot=(plot==0 and "8" or "-")
+                                           for y=0,31 do
+                                            for x=0,63 do
+                                              local plot=vm.vid[x+(64*y)]
+                                              plot=(plot==1 and "#" or "-")
                                               v:write(plot)
                                             end
-                                              v:write('\n')
+                                              v:write(' | '..y..'\n')
                                            end
                                            v:close()
                                  end
@@ -211,7 +222,8 @@
   --run the vm
   while true do
       if vm.pc>mem_base+c or vm.pc<mem_base then break end --out of bounds!
-      
+      vm.vid[0]=1
+      vm.vid[63+(64*31)]=1
       local ba=vm.mem[vm.pc]
       local bb=vm.mem[vm.pc+1]
       
