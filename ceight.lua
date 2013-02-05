@@ -94,40 +94,23 @@
                                               local lx,ly=arg.x+byt,arg.y+line
                                               local  lvid=vm.vid[lx+(64*ly)]
                                               if lbit==1 then
-                                                vm.vid[lx+(64*ly)]=bit.bxor(lvid,1)
-                                                --if vm.vid[lx+(64*ly)]==0 then
-                                                --  vm.v[0xf]=1 --set collision flag
-                                                --end
-                                                f:write("#")
-                                              else
-                                                f:write(" ")
+                                                   vm.vid[lx+(64*ly)]=bit.bxor(lvid,1)
+                                                if vm.vid[lx+(64*ly)]==0 then
+                                                  vm.v[0xf]=1 --set collision flag
+                                                end
                                               end
-
-                                              --f:write(lxor>0 and "#" or " ")
                                             end
-                                              f:write("  ("..lbyte..") ("..string.format("%X",vm.i+line)..")\n")
                                            end
-                                           
-                                           v = assert(io.open("_vidout", "w"))
-                                           for y=0,31 do
-                                            for x=0,63 do
-                                              local plot=vm.vid[x+(64*y)]
-                                              plot=(plot>0 and "#" or "-")
-                                              v:write(plot)
-                                            end
-                                              v:write(' | '..y..'\n')
-                                           end
-                                           v:close()
-                                           --os.execute("pause")
                                  end
   opc['2NNN'].exec=function(...) arg=(...) f:write((" called routine at 0x%x\n"):format(arg.n))
                                            vm.stk[max_stak]=vm.pc
                                            vm.pc=arg.n-2
-                                           max_stak=max_stak+1
+                                           if max_stak<=15 then max_stak=max_stak+1 end
                                  end
   opc['00EE'].exec=function(...) arg=(...) vm.pc=vm.stk[max_stak-1]
                                            f:write((" returns back to 0x%x (%d lvls of nesting)\n"):format(vm.pc,max_stak))
-                                           max_stak=max_stak-1
+                                           
+                                           if max_stak>=0 then max_stak=max_stak-1 end
                                  end
   opc['3XNN'].exec=function(...) arg=(...) if vm.v[arg.x]==arg.n then
                                             f:write((" skipping the next instruction (V%X==%X)\n"):format(arg.x,arg.n))
@@ -246,16 +229,14 @@
           break end
       end
       
-      --print(os.clock()-ck)
       if (os.clock()-ck)>.001 then -- ~60hz
-        --print("tick")
         if vm.v_dt>0 then vm.v_dt=(vm.v_dt)-1 end
         if vm.v_st>0 then vm.v_st=(vm.v_st)-1 end
         
         ck=os.clock()
-     end
+      end
 
-     vm.pc = vm.pc + 2
+      vm.pc = vm.pc + 2
   end
   
   f:close()
