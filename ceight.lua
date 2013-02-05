@@ -20,8 +20,6 @@
   local max_stak=0
   local mem_base=0x200
   
-  vm.v_dt,vm.v_st=0,0
-  
   --predefined array of sprites (glyphs)
   vm.mem={ 0xF0, 0x90, 0x90, 0x90, 0xF0, -- 0
            0x20, 0x60, 0x20, 0x20, 0x70, -- 1
@@ -43,7 +41,7 @@
   print("Starting off...")
   
   --load rom
-  local f = assert(io.open("roms\\PONG", "rb"))
+  local f = assert(io.open("roms/PONG", "rb"))
   if f then
     while true do
       local byte=f:read(1)
@@ -92,19 +90,20 @@
                                            for line=0,arg.n-1 do
                                             local lbyte=vm.mem[vm.i+line]
                                             for byt=0,7 do
-                                              local lbit=bit.band(bit.rshift(lbyte, 7-byt), 1)
-                                              local lx=arg.x+byt
-                                              local ly=arg.y+line
-                                              
-                                              local bxor=bit.bxor(vm.vid[lx+(64*ly)],lbit)
-                                              
-                                              if bxor==0 then
-                                                vm.v[0xf]=1
+                                              local  lbit=bit.band(bit.rshift(lbyte, 7-byt), 1)
+                                              local lx,ly=arg.x+byt,arg.y+line
+                                              local  lvid=vm.vid[lx+(64*ly)]
+                                              if lbit==1 then
+                                                vm.vid[lx+(64*ly)]=bit.bxor(lvid,1)
+                                                --if vm.vid[lx+(64*ly)]==0 then
+                                                --  vm.v[0xf]=1 --set collision flag
+                                                --end
+                                                f:write("#")
+                                              else
+                                                f:write(" ")
                                               end
-                                              
-                                              vm.vid[lx+(64*ly)]=bxor--vm.mem[vm.i+i*j]
-                                              f:write(lbit==1 and "#" or " ")
-                                              --f:write(string.format("x:%d y:%d ind:%d",lx,ly,lx+(64*ly)))
+
+                                              --f:write(lxor>0 and "#" or " ")
                                             end
                                               f:write("  ("..lbyte..") ("..string.format("%X",vm.i+line)..")\n")
                                            end
@@ -113,12 +112,13 @@
                                            for y=0,31 do
                                             for x=0,63 do
                                               local plot=vm.vid[x+(64*y)]
-                                              plot=(plot==1 and "#" or "-")
+                                              plot=(plot>0 and "#" or "-")
                                               v:write(plot)
                                             end
                                               v:write(' | '..y..'\n')
                                            end
                                            v:close()
+                                           --os.execute("pause")
                                  end
   opc['2NNN'].exec=function(...) arg=(...) f:write((" called routine at 0x%x\n"):format(arg.n))
                                            vm.stk[max_stak]=vm.pc
@@ -155,7 +155,7 @@
                                            vm.mem[vm.i+1]=tonumber(binenc:sub(2,2))
                                            vm.mem[vm.i+2]=tonumber(binenc:sub(3,3))
                                  end
-  opc['CXNN'].exec=function(...) arg=(...) local rnd=math.random(0,0xfff)
+  opc['CXNN'].exec=function(...) arg=(...) local rnd=math.random(0,0xff)
                                            f:write((" saving random value (%s) at V%X with mask %X\n"):format(rnd,arg.x,arg.n))
                                            vm.v[arg.x]=bit.band(rnd,arg.n)
                                  end
@@ -177,15 +177,21 @@
                                  end
   opc['7XNN'].exec=function(...) arg=(...) local sum=vm.v[arg.x]+arg.n
                                            f:write((" setting V%X to V%X(%x)+(%x)=%x\n"):format(arg.x, arg.x, vm.v[arg.x], arg.n, sum))
-                                           vm.v[arg.x]=sum
+                                           vm.v[arg.x]=bit.band(sum,0xff)
                                  end
   opc['8XY4'].exec=function(...) arg=(...) local sum=vm.v[arg.x]+vm.v[arg.y]
                                            f:write((" setting V%X to V%X(%x)+V%X(%x)=%x\n"):format(arg.x, arg.x, vm.v[arg.x], arg.y, vm.v[arg.y], sum))
-                                           vm.v[arg.x]=sum --fixme, add the carry flag thingie
+                                           if vm.v[arg.x] > 0xff then
+                                            vm.v[0xf]=1
+                                            vm.v[arg.x]=bit.band(sum,0xff)
+                                           else
+                                            vm.v[arg.x]=sum
+                                           end
                                  end
   opc['8XY5'].exec=function(...) arg=(...) local sub=vm.v[arg.y]-vm.v[arg.x]
+                                           vm.v[0xf]=vm.v[arg.x]>vm.v[arg.y] and 1 or 0
                                            f:write((" setting V%X to V%X(%x)-V%X(%x)=%x\n"):format(arg.x, arg.x, vm.v[arg.x], arg.y, vm.v[arg.y], sub))
-                                           vm.v[arg.x]=sub --fixme, add the carry flag thingie
+                                           vm.v[arg.x]=bit.band(sub,0xff)
                                  end
   opc['8XY0'].exec=function(...) arg=(...) f:write((" setting V%X to V%X(%x)\n"):format(arg.x, arg.y, vm.v[arg.y]))
                                            vm.v[arg.x]=vm.v[arg.y]
@@ -222,8 +228,7 @@
   --run the vm
   while true do
       if vm.pc>mem_base+c or vm.pc<mem_base then break end --out of bounds!
-      vm.vid[0]=1
-      vm.vid[63+(64*31)]=1
+      
       local ba=vm.mem[vm.pc]
       local bb=vm.mem[vm.pc+1]
       
